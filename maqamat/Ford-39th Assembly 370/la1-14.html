@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>The 39th Assembly</title>
+	<link rel="stylesheet" href="css/la1-m.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Work+Sans|PT+Sans+Narrow" rel="stylesheet">
+	<meta name="robots" content="noindex," "noimageindex," "nofollow">
+	<!-- doesn't seem to be needed <meta name="viewport" content="width=device-width,initial-scale=1">-->
+</head>
+
+<body>
+	<div id="div1" class="outer">
+		<div class="inner">			
+			<img id="picture1" src="assets/images/Ship.jpg">
+		</div>
+	</div>
+	
+<!-- for multiple images-->	
+	<div id="div2" class="outer" style="transform: translateY(-100%);">
+		<div class="inner">			
+			<img id="picture2" src="assets/images/Jungle.jpg" style="opacity:0;">
+		</div>
+	</div>	
+<!---->
+<!-- for multiple images-->	
+	<div id="div3" class="outer" style="transform: translateY(-200%);">
+		<div class="inner">			
+			<img id="picture3" src="assets/images/Mansion.jpg" style="opacity:0;">
+		</div>
+	</div>	
+<!---->
+<!-- for multiple images-->	
+	<div id="div4" class="outer" style="transform: translateY(-300%);">
+		<div class="inner">			
+			<img id="picture4" src="assets/images/Labour.jpg" style="opacity:0;">
+		</div>
+	</div>	
+<!---->
+<!-- for multiple images-->	
+	<div id="div5" class="outer" style="transform: translateY(-400%);">
+		<div class="inner">			
+			<img id="picture5" src="assets/images/Labour.jpg" style="opacity:0;">
+		</div>
+	</div>	
+<!---->
+<!-- for multiple images-->	
+	<div id="div6" class="outer" style="transform: translateY(-500%);">
+		<div class="inner">			
+			<img id="picture6" src="assets/images/Labour.jpg" style="opacity:0;">
+		</div>
+	</div>	
+<!---->
+<!-- for multiple images-->	
+	<div id="div7" class="outer" style="transform: translateY(-600%);">
+		<div class="inner">			
+			<img id="picture7" src="assets/images/Labour.jpg" style="opacity:0;">
+		</div>
+	</div>	
+<!---->
+
+<!-- overlay -->
+<div id="startscreen" class="tint">
+	<span id="title">Of Oman</span>
+	<br>
+	<span id="place-date">Iraq, 1236-1237</span>
+	<br>
+	<span id="timelength">(2:41 min.)</span>
+	<br>
+	<br>
+	<br>
+	<button id="playr">
+	<span id="play1">START</span>
+	<br>
+<!--	<br>
+	<span id="playsub">When you see the pillars</span>
+-->
+	</button>
+	<br>
+	<details id="mrinfo" open>
+		<summary>ABOUT</summary>
+			<div>
+			
+			<details id="caption1">
+				<summary class="summaryheading2">The Paintings</summary>
+				<div class="detailsblurb2">Yahya ibn Mahmud al-Wasiti, <em>Trading Ship, Foreign Jungle, Immaculate Mansion, Hour of Birth,</em> 1236-1237, Baghdad, Iraq.
+
+				</div>
+			</details>
+
+			<details>
+				<summary class="summaryheading2">Cite This</summary>
+				<div id="citethis" class="detailsblurb2">Beth Ford (Researcher, Scriptwriter, Voiceover, Storyboarder, Audio Editor, Image Editor, Animator, Coder), and Brodie DeVuyst (Voiceover). “Multimedia: Of Oman.” The Adventures of Abu Zayd and Al Harith in al-Wasitis Maqamat, November 21, 2017. (file:///Users/elizabethford/Downloads/drive-download-20171107T192041Z-001/la1-14.html).				
+				<p id="copyright"><b>creative commons</b> - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+				<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Summary</a>
+				<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">Legal</a>
+				</p>
+				</div>
+			</details>			
+
+			<details id="whyhere">
+				<summary class="summaryheading2">SOURCES</summary>
+				<div id="whyhere2" class="detailsblurb2">Lobo Loco. Love After Midnight. Mp3. Vol. Hoh Hey. Free Music Archive, 2017. http://freemusicarchive.org/music/Lobo_Loco/Hoh_Hey/Love_After_Midnight_ID_701.<p>Beth Ford (ft. Brodie DeVuyst). 39- Of Oman. Mp3. Vol. al-Wasiti Maqamat, 2017.
+</p><p>al-Wasiti. “The Thirty-Ninth Assembly called ‘Of Omân’ The Makamat.” Manuscript folio. Ink and opaque watercolour on paper. 37 x 28 cm. Iraq, 1237. National Library of France, Paris France. Arabe 5847. https://archive.org/stream/assembliesofalha015555mbp#page/n0/mode/2up.</p>
+				</div>
+			</details>
+			</div>
+	</details>
+
+</div>
+
+<!-- buttons -->
+	<button id="backbutton" class="button-style" onclick="back()"><i class="material-icons">close</i></button>
+			
+	<div id="subtitleswindow">This is a subtitles window. This is a subtitles window. This is a subtitles window. This is a subtitles window.
+	</div>
+	
+	<div id="mediabuttons"><!--buttons-->
+
+		<span id="morebuttons">  <!--buttonsx-->
+			<button id="replaybutton" class="button-style"><i class="material-icons">replay</i></button><!--btn1-->
+			<!--<button id="btn2" class="bcss"><i class="material-icons">fast_forward</i></button>-->
+			<button id="rewind5" class="button-style"><i class="material-icons">replay_5</i> </button>
+			<button id="forward5" class="button-style"><i class="material-icons">forward_5</i></button>
+			<button id="time" class="button-style">0.00</button>  
+		</span>
+
+		<button id="togglemorebuttons" class="button-style"><i class="material-icons">compare_arrows</i></button>
+		<button id="subtitlestoggle" class="button-style"><i class="material-icons">chat</i></button>
+		<button id="playpause" class="button-style"><i class="material-icons"><i class="material-icons">play_circle_filled</i></button>
+  </div>
+<audio id="audio1"><source src="assets/audio/Of%20Oman%20.m4a" type="audio/mp3" /></audio>	
+<!--
+<script src="js/greensock-js/src/minified/TweenMax.min.js">
+</script>
+-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+<script src="js/la1-14.js">
+</script>
+</body>
+
+</html>
