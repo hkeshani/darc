@@ -13,6 +13,7 @@ var pic4 = document.getElementById("picture4");
 var pic5 = document.getElementById("picture5");
 var pic6 = document.getElementById("picture6");
 var pic7 = document.getElementById("picture7");
+var pic8 = document.getElementById("picture8");
 var tl = new TimelineMax({paused:true,onUpdate:updatetime,onComplete:restart});
 
 tl.timeScale(1);
@@ -24,68 +25,148 @@ tl.to("#startscreen, #subtitleswindow", 0.5, {opacity: 0}, "+=0.5")
   .set ("#startscreen", {zIndex: -1})
   
 //1-ADD PAUSE
-  .set({}, {}, "+=5.00")
+  .set({}, {}, "+=3.00")
 
-//2-PAN LEFT
-  .to(pic1, 16.71, {
-  scale: 1.3,
-  xPercent: +35,
-  yPercent: +9,
-  ease: Power1.easeInOut
-})
-
-//ZOOM
-  .to({pic1,}, {}, "5.75")
-
- //3-ZOOM 
-  .to(pic1, 43.00, {
+//3-ZOOM 
+  .to(pic1, 9.50, {
   scale: 1.6,
   xPercent: 0,
   yPercent: 0,
-  ease: Power1.easeInOut
-})   
-  
-//2-PAN LEFT
-  .to(pic1, 10.00, {
-  scale: 1.3,
-  xPercent: +35,
-  yPercent: +9,
   ease: Power1.easeInOut
 })  
 
 //ADD PAUSE
   .set({}, {}, "+=0.1")
 
-//2-PAN LEFT
-  .to(pic1, 53.42, {
-  scale: 1.3,
-  xPercent: +35,
-  yPercent: +9,
-  ease: Power1.easeInOut
-})
-//ZOOM
-  .to({pic1,}, {}, "5.75")
+//CROSSFADE TO ANOTHER IMAGE
+  .to(pic1, 1, {
 
- //3-ZOOM 
-  .to(pic1, 43.00, {
+  opacity:0,
+  ease: Sine.easeInOut
+})
+  .to(pic2, 1, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+  rotation: 0,
+  opacity:1,
+  ease: Sine.easeInOut
+},'-=1') 
+
+
+//3-ZOOM 
+  .to(pic2, 10.50, {
   scale: 1.6,
   xPercent: 0,
   yPercent: 0,
   ease: Power1.easeInOut
-}) 
- //3-ZOOM 
-  .to(pic1, 23.00, {
-  scale: 6.0,
+})  
+
+//ADD PAUSE
+  .set({}, {}, "+=0.1")
+
+//CROSSFADE TO ANOTHER IMAGE
+  .set(pic3, {
+  scale: 1,
+  xPercent: 25,
+  yPercent: 0,
+
+  ease: Sine.easeInOut
+})
+  .to(pic2, 1, {
+  scale: 1.6,
+  xPercent: 0,
+  yPercent: 0,
+  opacity:0,
+  ease: Sine.easeInOut
+})
+  .to(pic3, 1, {
+  scale: 1,
+  xPercent: 25,
+  yPercent: 0,
+  rotation: 0,
+  opacity:1,
+  ease: Sine.easeInOut
+},'-=1') 
+
+//3-ZOOM 
+  .to(pic3, 18.00, {
+  scale: 2,
   xPercent: 0,
   yPercent: 0,
   ease: Power1.easeInOut
-}) 
-  
-//2-PAN RIGHT
-  .to(pic1, 20.00, {
-  scale: 5.5,
-  xPercent: +35,
-  yPercent: +9,
+})  
+
+//ADD PAUSE
+  .set({}, {}, "+=0.1")
+
+//CROSSFADE TO ANOTHER IMAGE
+  .set(pic4, {
+  scale: 1,
+  xPercent: 25,
+  yPercent: 0,
+
+  ease: Sine.easeInOut
+})
+  .to(pic3, 1, {
+  scale: 1.6,
+  xPercent: 0,
+  yPercent: 0,
+  opacity:0,
+  ease: Sine.easeInOut
+})
+  .to(pic4, 1, {
+  scale: 1,
+  xPercent: 25,
+  yPercent: 0,
+  rotation: 0,
+  opacity:1,
+  ease: Sine.easeInOut
+},'-=1') 
+
+ //3-ZOOM 
+  .to(pic4, 8.00, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+  ease: Power1.easeInOut
+})  
+
+//ADD PAUSE
+  .set({}, {}, "+=8.1")
+
+ //3-ZOOM 
+  .to(pic4, 9.00, {
+  scale: 2,
+  xPercent: 0,
+  yPercent: 0,
+  ease: Power1.easeInOut
+})  
+
+//ADD PAUSE
+  .set({}, {}, "+=0.1")
+
+
+//CROSSFADE TO ANOTHER IMAGE
+  .to(pic4, 1, {
+
+  opacity:0,
+  ease: Sine.easeInOut
+})
+  .to(pic5, 1, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+  rotation: 0,
+  opacity:1,
+  ease: Sine.easeInOut
+},'-=1') 
+
+ //3-ZOOM 
+  .to(pic5, 13.00, {
+  scale: 1.8,
+  xPercent: 0,
+  yPercent: 0,
   ease: Power1.easeInOut
 }) 
 
@@ -93,120 +174,12 @@ tl.to("#startscreen, #subtitleswindow", 0.5, {opacity: 0}, "+=0.5")
   .set({}, {}, "+=0.1")
 
 //CROSSFADE TO ANOTHER IMAGE
-  .set(pic1, {
-  scale: 1,
-  xPercent: 25,
-  yPercent: 0,
+  .to(pic5, 1, {
 
-  ease: Sine.easeInOut
-})
-  .to(pic1, 1, {
-  scale: 1,
-  xPercent: 2,
-  yPercent: 0,
   opacity:0,
-  ease: Sine.easeInOut
-})
-  .to(pic1, 1, {
-  scale: 1,
-  xPercent: 25,
-  yPercent: 0,
-  rotation: 0,
-  opacity:1,
-  ease: Sine.easeInOut
-},'-=1') 
-  
- //4-PAN 
-  .to(pic1, 13.64, {
-  scale: 1,
-  xPercent: -25,
-  yPercent: 0,
-  ease: Power1.easeInOut
-}) 
-  
-//CROSSFADE TO ANOTHER IMAGE
-  .set(pic1, {
-  scale: 1,
-  xPercent: 25,
-  yPercent: 0,
-
-  ease: Sine.easeInOut
-})
-  .to(pic1, 1, {
-  scale: 1,
-  xPercent: -25,
-  yPercent: 0,
-  opacity:0,
-  ease: Sine.easeInOut
-})
-  .to(pic1, 1, {
-  scale: 1,
-  xPercent: 25,
-  yPercent: 0,
-  rotation: 0,
-  opacity:1,
-  ease: Sine.easeInOut
-},'-=1') 
-
-//ADD PAUSE
-  .set({}, {}, "+=7")
-  
- //4-PAN 
-  .to(pic1, 26.24, {
-  scale: 1,
-  xPercent: -23,
-  yPercent: 0,
-  ease: Power1.easeInOut
-}) 
-
-//CROSSFADE TO ANOTHER IMAGE
-  .set(pic1, {
-  scale: 1.5,
-  xPercent: 0,
-  yPercent: 0,
-
-  ease: Sine.easeInOut
-})
-  .to(pic1, 1, {
-  scale: 1,
-  xPercent: -25,
-  yPercent: 0,
-  opacity:0,
-  ease: Sine.easeInOut
-})
-  .to(pic1, 1, {
-  scale: 1.5,
-  xPercent: 0,
-  yPercent: 0,
-  rotation: 0,
-  opacity:1,
-  ease: Sine.easeInOut
-},'-=1') 
-
- //4-ZOOM 
-  .to(pic6, 23.76, {
-  scale: 2,
-  xPercent: 0,
-  yPercent: 0,
-  ease: Power1.easeInOut
-}) 
-
-//CROSSFADE TO ANOTHER IMAGE
-  .set(pic7, {
-  scale: 1,
-  xPercent: 0,
-  yPercent: 0,
-
   ease: Sine.easeInOut
 })
   .to(pic6, 1, {
-  scale: 2,
-  xPercent: 0,
-  yPercent: 0,
-  opacity:0,
-  ease: Sine.easeInOut
-})
-  .to(pic7, 1, {
   scale: 1,
   xPercent: 0,
   yPercent: 0,
@@ -215,31 +188,25 @@ tl.to("#startscreen, #subtitleswindow", 0.5, {opacity: 0}, "+=0.5")
   ease: Sine.easeInOut
 },'-=1') 
 
- //4-PAN 
-  .to(pic7, 17.87, {
-  scale: 1,
-  xPercent: -23,
+ //3-ZOOM 
+  .to(pic6, 11.00, {
+  scale: 1.8,
+  xPercent: 0,
   yPercent: 0,
   ease: Power1.easeInOut
 }) 
 
-//CROSSFADE TO ANOTHER IMAGE
-  .set(pic2, {
-  scale: 3,
-  xPercent: 0,
-  yPercent: 0,
+//ADD PAUSE
+  .set({}, {}, "+=0.2")
 
+//CROSSFADE TO ANOTHER IMAGE
+  .to(pic6, 1, {
+
+  opacity:0,
   ease: Sine.easeInOut
 })
   .to(pic7, 1, {
   scale: 1,
-  xPercent: -23,
-  yPercent: 0,
-    opacity:0,
-  ease: Sine.easeInOut
-})
-  .to(pic2, 1, {
-  scale: 3,
   xPercent: 0,
   yPercent: 0,
   rotation: 0,
@@ -247,16 +214,16 @@ tl.to("#startscreen, #subtitleswindow", 0.5, {opacity: 0}, "+=0.5")
   ease: Sine.easeInOut
 },'-=1')
 
- //4-ZOOM 
-  .to(pic2, 31.04, {
-  scale: 1,
+//3-ZOOM 
+  .to(pic7, 34.50, {
+  scale: 1.8,
   xPercent: 0,
   yPercent: 0,
   ease: Power1.easeInOut
-})
+}) 
 
 //ADD PAUSE
-  .set({}, {}, "+=32.85")
+  .set({}, {}, "+=26.1")
 
 //end sequence
 	.set ("#startscreen", {zIndex: 0})
@@ -267,7 +234,7 @@ tl.to("#startscreen, #subtitleswindow", 0.5, {opacity: 0}, "+=0.5")
 
 // back button
 function back() {
-window.history.go(-1);
+window.location.href = "la1.html#back";
 };
 
 // play-pause button
