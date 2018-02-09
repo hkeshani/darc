@@ -183,7 +183,7 @@ tl
 
 // back button
 function back() {
-    window.location.href = "index.html#back";
+window.history.go(-1);
 };
 
 // play-pause button
