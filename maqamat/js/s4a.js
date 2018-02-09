@@ -267,7 +267,7 @@ tl.to("#startscreen, #subtitleswindow", 0.5, {opacity: 0}, "+=0.5")
 
 // back button
 function back() {
-window.location.href = "s4a.html#back";
+window.location.href = "#back";
 };
 
 // play-pause button
