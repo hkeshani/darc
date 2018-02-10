@@ -1,138 +1,187 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-div.gallery {
-    border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-    border: 1px solid #777;
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-div.desc {
-    padding: 15px;
-    text-align: center;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px){
-    .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
-}
-
-@media only screen and (max-width: 500px){
-    .responsive {
-        width: 100%;
-    }
-}
-
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-img {
-height: 10vh;
-width: auto;
-}
-
-</style>
+<meta charset=utf-8 />
+<meta name="description" content="description">
+ 
+<title>Maqamat</title>
+ 
+<link rel="stylesheet" media="screen" href="style.css" />
+<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+ 
 </head>
+ 
 <body>
+ 
+    
+    <div class="header">
+    	<h1>Al-Maqamat</h1>
+    	<p><a href="http://designshack.net/articles/css/how-to-build-a-responsive-thumbnail-gallery">Click here</a> to return to Design Shack. Resize this page to see the responsiveness in action. Instead of thinking about which media queries are the most popular, we instead analyzed the points where our specific design ceased being functional and reduced the number of columns at that point to make for a better reading experience. The result is a design that excels in the in-between.</p>
+    </div>
+    
+    <div class="container">
+    
+	    		    	
+	    	<div class="galleryItem">
+				<div class="shell">
+	    		<a href="maqamat/s4a.html"><img src="maqamat/assets/images/test.jpg" alt="" /></a>
+	    		</div>
+				<h3>Of Damietta</h3>
+	    		<p>Session 4</p>
+	    	</div>
+	    	
+	    	<div class="galleryItem">
+				<div class="shell">
+	    		<a href="maqamat/s4b.html"><img src="maqamat/assets/images/la1-14-2.jpg" alt="" /></a>
+	    		</div>
+				<h3>Of Damietta</h3>
+	    		<p>Session 4</p>
+	    	</div>
+	    	
+	    	<div class="galleryItem">
+				<div class="shell">
+	    		<a href="maqamat/s9.html"><img src="maqamat/assets/images/25r.jpeg" alt="" /></a>
+	    		</div>
+				<h3>Of Alexandria</h3>
+	    		<p>Session 9</p>
+	    	</div>
+	    	
+	    	<div class="galleryItem">
+				<div class="shell">
+	    		<a href="maqamat/s10.html"><img src="maqamat/assets/images/Maqamat10.jpeg" alt="" /></a>
+	    		</div>
+				<h3>Of Rahbah</h3>
+	    		<p>Session 10</p>
+	    	</div>
+	    	
+	    	<div class="galleryItem">
+				<div class="shell">
+	    		<a href="maqamat/s11.html"><img src="maqamat/assets/images/Maqamat 29v.jpeg" alt="" /></a>
+	    		</div>
+				<h3>Of Sâweh</h3>
+	    		<p>Session 11</p>
+	    	</div>
 
-<h2>Maqamat</h2>
+	    	<div class="galleryItem">
+				<div class="shell">
+	    		<a href="maqamat/s12.html"><img src="maqamat/assets/images/Maqmat%201.JPEG" alt="" /></a>
+	    		</div>
+				<h3>Of Damascus</h3>
+	    		<p>Session 12</p>
+	    	</div>	    	
 
-<div style="padding:6px;">
-  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
-  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
-</div>
+			<div class="galleryItem">
+				<div class="shell">
+	    		<a href="maqamat/s13.html"><img src="maqamat/assets/images/My Image full.jpeg" alt="" /></a>
+	    		</div>
+				<h3>Of Baghdad</h3>
+	    		<p>Session 13</p>
+	    	</div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="maqamat/s4a.html">
-      <img src="maqamat/assets/images/test.jpg" alt="Session 4">
-    </a>
-    <div class="desc">Session 4 - Of Damietta</div>
-  </div>
-</div>
+			<div class="galleryItem">
+				<div class="shell">
+	    		<a href="maqamat/s16.html"><img src="maqamat/assets/images/maqamatimg2.JPEG" alt="" /></a>
+	    		</div>
+				<h3>Of The West</h3>
+	    		<p>Session 16</p>
+	    	</div>
 
+			<div class="galleryItem">
+				<div class="shell">
+	    		<a href="maqamat/s17.html"><img src="maqamat/assets/images/Maqamat%201.jpg" alt="" /></a>
+	    		</div>
+				<h3>Of The Reversed</h3>
+	    		<p>Session 17</p>
+	    	</div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="maqamat/s4b.html">
-      <img src="maqamat/assets/images/la1-14-2.jpg" alt="Session 4">
-    </a>
-    <div class="desc">Session 4 - Of Damietta</div>
-  </div>
-</div>
+			<div class="galleryItem">
+				<div class="shell">
+	    		<a href="maqamat/s18.html"><img src="maqamat/assets/images/Image%202.jpeg" alt="" /></a>
+	    		</div>
+				<h3>Of Sinjar</h3>
+	    		<p>Session 18</p>
+	    	</div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="maqamat/s9.html">
-      <img src="maqamat/assets/images/25r.jpeg" alt="Session 9">
-    </a>
-    <div class="desc">Session 9 - Of Alexandria</div>
-  </div>
-</div>
+			<div class="galleryItem">
+				<div class="shell">
+	    		<a href="maqamat/s28.html"><img src="maqamat/assets/images/image1.jpg" alt="" /></a>
+	    		</div>
+				<h3>Of Samarkand</h3>
+	    		<p>Session 28</p>
+	    	</div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="maqamat/s10.html">
-      <img src="maqamat/assets/images/Maqamat10.jpeg" alt="Session 10">
-    </a>
-    <div class="desc">Session 10 - Of Rahbah</div>
-  </div>
-</div>
+			<div class="galleryItem">
+				<div class="shell">
+	    		<a href="maqamat/s31.html"><img src="maqamat/assets/images/image-1.JPEG" alt="" /></a>
+	    		</div>
+				<h3>Of Ramlah</h3>
+	    		<p>Session 31</p>
+	    	</div>
 
-<div class="clearfix"></div>
+			<div class="galleryItem">
+				<div class="shell">
+	    		<a href="maqamat/s34a.html"><img src="maqamat/assets/images/Maqmat-IMG2.JPEG" alt="" /></a>
+	    		</div>
+				<h3>Of Zabîd</h3>
+	    		<p>Session 34</p>
+	    	</div>
 
+			<div class="galleryItem">
+				<div class="shell">
+	    		<a href="maqamat/s34b.html"><img src="maqamat/assets/images/Maqamat-34v.jpeg" alt="" /></a>
+	    		</div>
+				<h3>Of Zabîd</h3>
+	    		<p>Session 34</p>
+	    	</div>
 
+			<div class="galleryItem">
+				<div class="shell">
+	    		<a href="maqamat/s37.html"><img src="maqamat/assets/images/Al_Maqamat_37.jpeg" alt="" /></a>
+	    		</div>
+				<h3>Of Sa'dah</h3>
+	    		<p>Session 37</p>
+	    	</div>
 
-</body>
-</html>
-<!--
-<body>
-<h1>Maqamat</h1>
-<p>The Maqamat is ...</p>
-  <p><a href="maqamat/s4a.html">Session 4<a></p>
-  <p><a href="maqamat/s4b.html">Session 4<a></p>
-  <p><a href="maqamat/s9.html">Session 9<a></p>
-  <p><a href="maqamat/s10.html">Session 10<a></p>
-  <p><a href="maqamat/s11.html">Session 11<a></p>
-  <p><a href="maqamat/s12.html">Session 12<a></p>
-  <p><a href="maqamat/s13.html">Session 13<a></p>
-  <p><a href="maqamat/s16.html">Session 16<a></p>
-  <p><a href="maqamat/s17.html">Session 17<a></p>
-  <p><a href="maqamat/s18.html">Session 18<a></p>
-  <p><a href="maqamat/s28.html">Session 28<a></p>
-  <p><a href="maqamat/s31.html">Session 31<a></p>
-  <p><a href="maqamat/s32.html">Session 32<a></p>
-  <p><a href="maqamat/s34a.html">Session 34<a></p>
-  <p><a href="maqamat/s34b.html">Session 34<a></p>
-  <p><a href="maqamat/s37.html">Session 37<a></p>
-  <p><a href="maqamat/s39a.html">Session 39<a></p>
-  <p><a href="maqamat/s39b.html">Session 39<a></p>
-  <p><a href="maqamat/s41.html">Session 41<a></p>
-  <p><a href="maqamat/s42.html">Session 42<a></p>
-  <p><a href="maqamat/s43.html">Session 43<a></p>
-</body>
-</html>
--->
+			<div class="galleryItem">
+				<div class="shell">
+	    		<a href="maqamat/s39a.html"><img src="maqamat/assets/images/Ship.jpg" alt="" /></a>
+	    		</div>
+				<h3>Of Oman</h3>
+	    		<p>Session 39</p>
+	    	</div>
+
+			<div class="galleryItem">
+				<div class="shell">
+	    		<a href="maqamat/s39b.html"><img src="maqamat/assets/images/Boat 1.jpeg" alt="" /></a>
+	    		</div>
+				<h3>Of Oman</h3>
+	    		<p>Session 39</p>
+	    	</div>
+
+			<div class="galleryItem">
+				<div class="shell">
+	    		<a href="maqamat/s41.html"><img src="maqamat/assets/images/130r.jpg" alt="" /></a>
+	    		</div>
+				<h3>Of Tanis</h3>
+	    		<p>Session 41</p>
+	    	</div>
+			
+			<div class="galleryItem">
+				<div class="shell">
+	    		<a href="maqamat/s42.html"><img src="maqamat/assets/images/Image_131v.jpeg" alt="" /></a>
+	    		</div>
+				<h3>Of Najran</h3>
+	    		<p>Session 42</p>
+	    	</div>
+
+			<div class="galleryItem">
+				<div class="shell">
+	    		<a href="maqamat/s43.html"><img src="maqamat/assets/images/test1.JPEG" alt="" /></a>
+	    		</div>
+				<h3>Of Al-Bakriyah</h3>
+	    		<p>Session 43</p>
+	    	</div>
+    	</div>
+    	
+    	
+    </div>
