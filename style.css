@@ -12,7 +12,7 @@
 }
 
 .header h1 {
-	font: 50px/1.0 'Yanone Kaffeesatz', sans-serif;
+	font: 10vh/1.0 'Yanone Kaffeesatz', sans-serif;
 	font-weight: 400;
 	text-transform: uppercase;
 	margin: 0 0 15px 2%;
@@ -20,7 +20,7 @@
 
 .header p {
 	color: #797478;
-	font: 10px/1.5 Verdana, Helvetica, sans-serif;
+	font: 3vh/1.5 Verdana, Helvetica, sans-serif;
 	margin: 0 0 0 2%;
 }
 
@@ -36,17 +36,17 @@
 /*GALLERY STYLES*/
 .galleryItem {
 	color: #797478;
-	font: 10px/1.5 Verdana, Helvetica, sans-serif;
+	font: 2.5vh/1.5 Verdana, Helvetica, sans-serif;
 	width: 26%;
-	min-width: 24em;
-	margin:  2% 2% 50px 2%;
+	min-width: 37vh;
+	margin:  0% 2% 50px 0%;
 	float: left;
 	-webkit-transition: color 0.5s ease;
 	border: 0px solid blue;
 }
 
 .shell {
-	height: 30em;
+	height: 50vh;
 	overflow: hidden;
 	border: 0px solid green;
 }
@@ -69,22 +69,23 @@
 
 
 
-/* MEDIA QUERIES*/
+/* MEDIA QUERIES
 @media only screen and (max-width : 940px),
 only screen and (max-device-width : 940px){
-	.galleryItem {width: 21%;}
+	.galleryItem {width: 26%; }
+	
 }
 
 @media only screen and (max-width : 720px),
 only screen and (max-device-width : 720px){
 	.galleryItem {width: 29.33333%;}
-	.header h1 {font-size: 40px;}
+	.header h1 {font-size: 8vh;}
 }
 
 @media only screen and (max-width : 530px),
 only screen and (max-device-width : 530px){
 	.galleryItem {width: 46%;}
-	.header h1 {font-size: 28px;}
+	.header h1 {font-size: 8vh;}
 }
 
 @media only screen and (max-width : 320px),
@@ -93,5 +94,6 @@ only screen and (max-device-width : 320px){
 	.galleryItem img {width: 96%;}
 	.galleryItem h3 {font-size: 18px;}
 	.galleryItem p, .header p {font-size: 18px;}
-	.header h1 {font-size: 70px;}
+	.header h1 {font-size: 8vh;}
 }
+*/
