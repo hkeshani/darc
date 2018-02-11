@@ -15,10 +15,10 @@
 	font: 10vh/1.0 'Yanone Kaffeesatz', sans-serif;
 	font-weight: 400;
 	text-transform: uppercase;
-	margin: 0 0 15px 2%;
+	margin: 2% 0 15px 2%;
 }
 
-.header p {
+.header p, details {
 	color: #797478;
 	font: 3vh/1.5 Verdana, Helvetica, sans-serif;
 	margin: 0 0 0 2%;
