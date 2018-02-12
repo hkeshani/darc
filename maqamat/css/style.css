@@ -9,34 +9,6 @@ html {
 }
 
 
-/* Portrait 
-@media only screen 
-  and (min-device-width: 360px) 
-  and (max-device-width: 812px) 
-
-  and (orientation: portrait) { 
-    body{
-        font-size: 16px;
-		
-    }
-
-}
-
-
-
-
-/* Landscape 
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
-    body{
-        font-size: 12px;
-    }
-}
-*/
-
 /*HEADER STYLES*/
 
 .banner {
@@ -105,7 +77,7 @@ details h3 {
   	border: 0px solid blue;
 	    opacity: 1; 
 }
-img:hover {
+.shell img:hover {
 	opacity: 0.8;
 }
 
@@ -123,4 +95,3 @@ h4 {
 	font: 1.1em/1.5 Verdana, Helvetica, sans-serif;
 	padding-bottom: 1.5em;
 }
-
