@@ -1,0 +1,73 @@
+body {
+background-color: black;
+  margin:0;
+}
+
+#imagediv {
+  position: relative;
+    width: 66.66vh;
+    height: 100vh;
+  background-color: black;
+    border: 0px solid blue;
+    z-index: 2;
+    overflow: hidden;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#imagediv img {
+   height: 100%;
+   width: auto;
+   z-index: 3;
+   transform: translate(0,0);
+  opacity: 1;
+}
+
+#titlepage {
+position: absolute;
+  background: rgba(0, 0, 0, 0.8); 
+  padding: 5vh;
+  width: 56.66vh;
+  top:0vh;
+  color: white;
+  border: 0px solid red;
+  z-index: 4;
+    text-align: center;
+    height: 100vh;
+  opacity:1;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Arial";
+  font-weight: lighter;
+}
+h4 {
+  color: gray;
+}
+
+#buttons {
+  position: fixed;
+  width: 100vw;
+  bottom:2vh;
+  z-index:99;
+  text-align: center;
+  color: gray;
+  background: rgba(0, 0, 0, 0.8); 
+
+}
+.bcss {
+  color: gray;
+  background: rgba(0, 0, 0, 0
+  );
+  font-size: 3vh;
+  height: 7vh;
+  width: 7vh;
+  border: 0px solid gray;
+}
+
+#time {
+  text-align:left;
+width: 10vw;
+  vertical-align: top;
+}
