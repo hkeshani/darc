@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  	<link rel="stylesheet" href="css/kd.css">
+</head>
+
+<div id="imagediv">
+  <img id="picture1" src="assets/images/assets/images/btv1b8453971jf71.jpg">
+  <div id="titlepage">
+    <h2>Kalila and Dimna</h2>
+    <h1>The Monkey and the Carpenter</h1>
+    <h3>Bibliothèque nationale de France, Département des manuscrits<br>BN Arabe 3472 Kalîla et Dimna Folio #34r</h3>
+    <h2>Omar Al-Tura</h2>
+    <h3>November 15th 2016</h3><h4>A Multimedia Project for<br>ARTH 370 - Art & Literature of the Islamic World</p><p>Dr. Hussein Keshani<br>Art History & Visual Culture | UBC Okanagan campus</p></h4>
+  </div>
+</div>
+
+
+<audio id="audio1"><source src="assets/audio/Arth.mp3" type="audio/mp3" /></audio>
+
+<div id="buttons">
+<button id="btn" class="bcss"><i class="material-icons">play_arrow</i></button>
+<button id="btn1" class="bcss"><i class="material-icons">replay</i></button>
+<button id="btn2" class="bcss"><i class="material-icons">fast_forward</i></button>
+<button id="btn3" class="bcss"><i class="material-icons">replay_5</i> </button>
+<button id="btn4" class="bcss"><i class="material-icons">forward_5</i></button>
+<button id="time" class="bcss">0.00</button>
+  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+<script src="js/kd.js"></script>
+<script>
+var tl = new TimelineMax({paused:true,onUpdate:updatetime});
+var pic1 = document.getElementById("picture1");
+var aud1 = document.getElementById('audio1');
+
+tl.timeScale(1);
+
+
+//SET POSITION - 0S
+
+tl.to("#titlepage", 0.5, {opacity: 0}, "+=0.5")
+
+  .set(pic1, {
+  scale: 2,
+  xPercent: 0,
+  yPercent: -50,
+  opacity:1,
+})
+
+//ADD PAUSE FOR 1s
+  .set({}, {}, "+=1")
+
+
+
+//PAN LEFT FOR 5s
+  .to(pic1, 5, {
+  scale: 2,
+  xPercent: -50,
+  yPercent: -25,
+  ease: Power1.easeInOut
+})
+
+// ZOOM IN TO 3x
+  .to(pic1, 5, {
+  scale: 3,
+  xPercent: -50,
+  yPercent: -50,
+  ease: Sine.easeInOut
+})
+
+//ADD PAUSE FOR 2s
+  .set({}, {}, "+=2")
+
+//PAN RIGHT FOR 5s
+  .to(pic1, 5, {
+  scale: 3,
+  xPercent: -25,
+  yPercent: -40,
+  ease: Power1.easeInOut
+})
+
+//ADD PAUSE FOR 2s
+  .set({}, {}, "+=2")
+
+//PAN UP FOR 3s
+  .to(pic1, 3, {
+  scale: 2,
+  xPercent: -50,
+  yPercent: -50,
+  ease: Power1.easeInOut
+})
+
+//ADD PAUSE FOR 2s
+  .set({}, {}, "+=2")
+
+// ZOOM IN TO 3x
+  .to(pic1, 5, {
+  scale: 3,
+  xPercent: -50,
+  yPercent: -50,
+  ease: Sine.easeInOut
+})
+
+//ADD PAUSE FOR 2s
+  .set({}, {}, "+=2")
+
+// ZOOM IN TO 3x
+  .to(pic1, 5, {
+  scale: 3,
+  xPercent: -40,
+  yPercent: -60,
+  ease: Sine.easeInOut
+})
+
+//ADD PAUSE FOR 2s
+  .set({}, {}, "+=2")
+
+// ZOOM IN TO 3x
+  .to(pic1, 5, {
+  scale: 3,
+  xPercent: -80,
+  yPercent: -65,
+  ease: Sine.easeInOut
+})
+
+//ADD PAUSE FOR 2s
+  .set({}, {}, "+=2")
+
+//ROTATE 20DEGREES CLOCKWISE
+  .to(pic1, 5, {
+  scale: 3,
+  xPercent: -50,
+  yPercent: -50,
+  rotation: 20,
+  ease: Sine.easeInOut
+})
+
+//ADD PAUSE FOR 2s
+  .set({}, {}, "+=2")
+
+//ROTATE 20DEGREES COUNTERCLOCKWISE
+  .to(pic1, 5, {
+  scale: 1.99,
+  xPercent: -20,
+  yPercent: -50,
+  rotation: 0,
+  ease: Sine.easeInOut
+})
+
+//ADD PAUSE FOR 5s
+  .set({}, {}, "+=5")
+
+//REDUCE OPACITY BY 100%
+  .to(pic1, 5, {
+  scale: 1.5,
+  xPercent: 0,
+  yPercent: 0,
+  rotation: 0,
+  opacity:0,
+  ease: Sine.easeInOut
+})
+
+
+//ADD PAUSE FOR 2s
+  .set({}, {}, "+=2")
+
+.to("#titlepage", 0.5, {opacity: 1})
+ 
+</script>
+</html>

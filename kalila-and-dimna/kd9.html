@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  	<link rel="stylesheet" href="css/kd2.css">
+</head>
+
+<div id="imagediv">
+  <img id="picture1" src="assets/images/btv1b8453971jf86.jpg">
+  <img id="picture2" src="assets/images/btv1b8453971jf87.jpg">
+  <img id="picture3" src="assets/images/btv1b8453971jf89.jpg">
+
+
+</div>
+
+<div id="titlepage">
+  <h2>Kalila and Dimna</h2>
+  <h1>Personified Lessons for Princes</h1>
+  <h3>BnF<br>BN Arab 3472, Folios 41v, 42r & 43r</h3>
+  <h2>Anton Hsu</h2>
+  <h3>November 8th, 2016</h3>
+  <h4>A Multimedia Project for<br>ARTH 370 - Art & Literature of the Islamic World</p><p>Dr. Hussein Keshani<br>Art History & Visual Culture | UBC Okanagan campus</p></h4>
+</div>
+
+<audio id="audio1"><source src="http://darcideas.com/arth370/Hsu_Storyboard_Audio.mp3" type="audio/mp3" /></audio>
+
+<div id="buttons">
+<button id="btn" class="bcss"><i class="material-icons">play_arrow</i></button>
+<button id="btn1" class="bcss"><i class="material-icons">replay</i></button>
+<button id="btn2" class="bcss"><i class="material-icons">fast_forward</i></button>
+<button id="btn3" class="bcss"><i class="material-icons">replay_5</i> </button>
+<button id="btn4" class="bcss"><i class="material-icons">forward_5</i></button>
+<button id="time" class="bcss">0.00</button>
+  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+<script src="js/kd.js"></script>
+<script>
+var tl = new TimelineMax({paused:true,onUpdate:updatetime});
+var pic1 = document.getElementById("picture1");
+var pic2 = document.getElementById("picture2");
+var pic3 = document.getElementById("picture3");
+var aud1 = document.getElementById('audio1');
+var time = document.getElementById('time');
+var time2 = document.getElementById('time2');
+
+
+tl.timeScale(1);
+
+
+
+tl.to("#titlepage", 0.5, {opacity: 0}, "+=0.5")
+
+//SET POSITION - 0S
+
+  .to(pic1, 0.5,{
+  scale: 1.5,
+  xPercent: 12,
+  yPercent: 3,
+  opacity:1
+})
+
+//ADD PAUSE FOR 17s
+  .set({}, {}, "+=17")
+
+// ZOOM IN TO 4x
+  .to(pic1, 2, {
+  scale: 3,
+  xPercent: 55,
+  yPercent: -15,
+  ease: Sine.easeInOut
+})
+
+//ADD PAUSE FOR 5s
+  .set({}, {}, "+=5")
+
+//PAN RIGHT FOR 3s
+  .to(pic1, 3, {
+  xPercent: -7,
+  yPercent: -15,
+  ease: Power1.easeInOut
+})
+
+//ADD PAUSE FOR 6s
+  .set({}, {}, "+=6")
+
+// ZOOM OUT TO 2x
+  .to(pic1, 2, {
+  scale: 2,
+  xPercent: 13,
+  yPercent: -10,
+  ease: Sine.easeInOut
+})
+
+//ADD PAUSE FOR 9s
+  .set({}, {}, "+=6.85")
+
+//JUMP CUT
+  .to(pic2, 1, {
+  scale: 1.5,
+  xPercent: 0,
+  yPercent: 0,
+  rotation: 0,
+  opacity:0,
+  ease: Sine.easeInOut
+})
+  .set(pic2, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+})
+  .to(pic2, 0.5, {
+  scale: 1.45,
+  xPercent: -13,
+  yPercent: 5,
+  rotation: 0,
+  opacity:1,
+  ease: Sine.easeInOut
+})
+
+//ADD PAUSE FOR 13s
+  .set({}, {}, "+=13")
+
+// ZOOM IN TO 4x
+  .to(pic2, 2, {
+  scale: 3,
+  xPercent: 10,
+  yPercent: 60,
+  ease: Sine.easeInOut
+})
+
+//ADD PAUSE FOR 2.5s
+  .set({}, {}, "+=2.5")
+
+//PAN RIGHT FOR 3s
+  .to(pic2, 3, {
+  xPercent: -65,
+  yPercent: 60,
+  ease: Power1.easeInOut
+})
+
+//ADD PAUSE FOR 15s
+  .set({}, {}, "+=15")
+
+// ZOOM OUT TO 2x
+  .to(pic2, 2, {
+  scale: 2,
+  xPercent: -20,
+  yPercent: 30,
+  ease: Sine.easeInOut
+})
+
+//ADD PAUSE FOR 9s
+  .set({}, {}, "+=9")
+
+//JUMP CUT
+  .to(pic3, 0.5, {
+  scale: 1.5,
+  xPercent: 0,
+  yPercent: 0,
+  rotation: 0,
+  opacity:0,
+  ease: Sine.easeInOut
+})
+  .set(pic3, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+})
+  .to(pic3, 0.5, {
+  scale: 1.45,
+  xPercent: -11,
+  yPercent: 5,
+  rotation: 0,
+  opacity:1,
+  ease: Sine.easeInOut
+})
+
+//ROTATE 180DEGREES CLOCKWISE
+  .to(pic3, 2, {
+  scale: 1.5,
+  xPercent: 9,
+  yPercent: -4,
+  rotation: 178,
+  ease: Sine.easeInOut
+})
+
+//ADD PAUSE FOR 3s
+  .set({}, {}, "+=3")
+
+// ZOOM IN TO 5x
+  .to(pic3, 13, {
+  scale: 5,
+  xPercent: 10,
+  yPercent: -30,
+  ease: Sine.easeInOut
+})
+
+//ADD PAUSE FOR 3s
+  .set({}, {}, "+=2.5")
+
+// ZOOM OUT TO 2x
+  .to(pic3, 2, {
+  scale: 1.5,
+  xPercent: 8,
+  yPercent: -5,
+  ease: Sine.easeInOut
+})
+
+//ADD PAUSE FOR 8s
+  .set({}, {}, "+=11")
+
+//INCREASE OPACITY TO 0%
+  .to(pic3, 0.6, {
+  scale: 1.5,
+  xPercent: 0,
+  yPercent: 0,
+  rotation: 180,
+  opacity:0,
+  ease: Sine.easeInOut
+})
+
+//INCREASE OPACITY TO 0%
+  .to(pic2, 0.6, {
+  scale: 1.5,
+  xPercent: 0,
+  yPercent: 0,
+  rotation: 0,
+  opacity:0,
+  ease: Sine.easeInOut
+})
+
+//INCREASE OPACITY TO 0%
+  .to(pic1, 0.6, {
+  scale: 1.5,
+  xPercent: 0,
+  yPercent: 0,
+  rotation: 0,
+  opacity:0,
+  ease: Sine.easeInOut
+})
+
+
+
+.to("#titlepage", 0.5, {opacity: 1})
+ 
+</script>
+</html>
