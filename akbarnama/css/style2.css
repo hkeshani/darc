@@ -33,21 +33,24 @@ figure {
 
 figcaption { 
   position: absolute; 
-  background: rgba(0,0,0,1); 
+  background: rgba(0,0,0,0.75); 
   color: white; 
   padding: 10px 20px; 
+
   opacity: 0;
   bottom: 0; 
-  right: 0;
+  left: -30%;
   -webkit-transition: all 0.6s ease;
   -moz-transition:    all 0.6s ease;
   -o-transition:      all 0.6s ease;
 }
 
+figure:hover figcaption {
+  opacity: 1;
+  left: 0;
+}
 
-
-
-.cap-left figcaption { bottom: 0; left: 0; }
+.cap-left figcaption { bottom: 0; left: -30%; }
 .cap-left:hover figcaption { left: 0; }
 .cap-left:before {  bottom: 10px; left: 10px; }
 
@@ -70,13 +73,9 @@ figure:before {
   -o-transition: all 0.6s ease;
   opacity: 0.75;	
 }
-
-
-figcaption:hover {
-  opacity: 1;
-  left: 0;
+figure:hover:before {
+  opacity: 0;
 }
-
 
 .header {
 	width: 100vw;
@@ -89,14 +88,14 @@ figcaption:hover {
 }
 
 .header h1 {
-	font:3.9em/1.0 'Yanone Kaffeesatz', sans-serif;
+	font:3.7em/1.0 'Yanone Kaffeesatz', sans-serif;
 	font-weight: 500;
 	text-transform: uppercase;
 }
 
 .header h1 + p, details {
 	color: #797478;
-	font: 1.6em/1.5 Verdana, Helvetica, sans-serif;
+	font: 1.7em/1.5 Verdana, Helvetica, sans-serif;
 	padding-top: 1em;
 }
 
@@ -122,51 +121,32 @@ details h3 {
 }
 
 .shell {
-	  position: relative;
 	  overflow: hidden;
   	border: 0px solid red;
 	padding: 0;
-
 }
-
-.shell:after {
-  position: absolute;
-  top: 10%;
-  left: 85%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  content: "play_circle_outline";
-font-family: "Material Icons";
-  font-size: 5em;
-  color: #fff;
-  opacity: .5;
-}
-
 
 .shell img { 
   width: 100%; 
   height: auto;
   	border: 0px solid blue;
-	    opacity: 1;	
+	    opacity: 1; 
 }
-.shell:hover {
-opacity: .8;
+.shell img:hover {
+	opacity: 0.8;
 }
 
 .galleryItem h3 {
 	color: #797478;
-	font: 1.4em/1.2 Verdana, Helvetica, sans-serif;
-	padding-top: 0.5em;
-	padding-left: .7em;
-	padding-right: .7em;
+	font: 1.4em/1 Verdana, Helvetica, sans-serif;
+	padding-top: 0em;
+	padding-left: 1.3vw;
 	border: 0px solid green;
 
 }
 h4 {
-	padding-left: .7em;
-	padding-right: .7em;
+	padding-left: 1.3vw;
 	color: #797478;
 	font: 1.1em/1.5 Verdana, Helvetica, sans-serif;
-	padding-top: 1em;	
 	padding-bottom: 1.5em;
 }
