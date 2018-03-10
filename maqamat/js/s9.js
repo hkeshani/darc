@@ -28,9 +28,9 @@ tl.to("#startscreen, #subtitleswindow", 0.5, {opacity: 0}, "+=0.5")
 
 //2-ZOOM
   .to(pic1, 7, {
-  scale: 2.4,
-  xPercent: -55,
-  yPercent: -15,
+  scale: 2.3,
+  xPercent: -75,
+  yPercent: -5,
   ease: Power1.easeInOut
 })
 //3-ADD PAUSE
@@ -38,9 +38,9 @@ tl.to("#startscreen, #subtitleswindow", 0.5, {opacity: 0}, "+=0.5")
 
 //4-ZOOM
   .to(pic1, 6, {
-  scale: 3.0,
+  scale: 2.5,
   xPercent: 60,
-  yPercent: -23,
+  yPercent: -13,
   ease: Power1.easeInOut
 })
 
@@ -49,8 +49,8 @@ tl.to("#startscreen, #subtitleswindow", 0.5, {opacity: 0}, "+=0.5")
 
 //6-ZOOM
   .to(pic1, 3, {
-  scale: 3.8,
-  xPercent: 30,
+  scale: 3.0,
+  xPercent: 0,
   yPercent: -30,
   ease: Power1.easeInOut
 })
@@ -59,8 +59,8 @@ tl.to("#startscreen, #subtitleswindow", 0.5, {opacity: 0}, "+=0.5")
 
 //8-ZOOM
   .to(pic1, 3, {
-  scale: 3.8,
-  xPercent: 10,
+  scale: 3.0,
+  xPercent: 0,
   yPercent: -30,
   ease: Power1.easeInOut
 })
@@ -69,8 +69,8 @@ tl.to("#startscreen, #subtitleswindow", 0.5, {opacity: 0}, "+=0.5")
 
 //10-ZOOM
   .to(pic1, 3, {
-  scale: 3.8,
-  xPercent: -60,
+  scale: 3.0,
+  xPercent: -100,
   yPercent: -30,
   ease: Power1.easeInOut
 })
@@ -90,25 +90,31 @@ tl.to("#startscreen, #subtitleswindow", 0.5, {opacity: 0}, "+=0.5")
   .set({}, {}, "+=16.1")
 
 //14-ZOOM
-  .to(pic1, 6, {
-  scale: 3.0,
+  .to(pic1, 3, {
+  scale: 2.5,
   xPercent: 60,
   yPercent: -23,
   ease: Power1.easeInOut
 })
 
-//15-ADD PAUSE
-  .set({}, {}, "+=10.1")
-
+//15-ZOOM
+  .to(pic1, 6, {
+  scale: 2.5,
+  xPercent: -5,
+  yPercent: -23,
+  ease: Power1.easeInOut
+})  
+  
 //16-ZOOM
-  .to(pic1, 22, {
+  .to(pic1, 13, {
   scale: 1.0,
   xPercent: 0,
   yPercent: 0,
   ease: Power1.easeInOut
 }) 
 
-
+//13-ADD PAUSE
+  .set({}, {}, "+=18.1")
 
 //end sequence
 	.set ("#startscreen", {zIndex: 0})
@@ -216,3 +222,7 @@ replaybutton.onclick = function restart() {
 function restart() {
   audio1.currentTime = 0; audio1.playbackRate = 1; audio1.pause(); tl.timeScale(1); tl.restart(0).pause(); playpause.innerHTML = "<i class='material-icons'>play_circle_filled</i>"; time.innerHTML = "0.00";
 };
+
+//GET, TRIM AND DISPLAY URL FOR SHARE MODAL
+var x = window.location.href.split('#')[0];
+document.getElementById("url2").innerHTML = x;

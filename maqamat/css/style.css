@@ -20,7 +20,63 @@ html {
 
 #banner {
 	width: 100%
+	
 }
+
+figure { 
+  display: block; 
+  position: relative; 
+  overflow: hidden;
+   font: 1em/1 Verdana, Helvetica, sans-serif;
+  
+}
+
+figcaption { 
+  position: absolute; 
+  background: rgba(0,0,0,1); 
+  color: white; 
+  padding: 10px 20px; 
+  opacity: 0;
+  bottom: 0; 
+  right: 0;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition:    all 0.6s ease;
+  -o-transition:      all 0.6s ease;
+}
+
+
+
+
+.cap-left figcaption { bottom: 0; left: 0; }
+.cap-left:hover figcaption { left: 0; }
+.cap-left:before {  bottom: 10px; left: 10px; }
+
+figure:before { 
+  content: "i"; 
+  position: absolute; 
+  background: rgba(255,255,255,0.75); 
+  color: black;
+  width: 24px;
+  height: 24px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius:    12px;
+  border-radius:         12px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  /* Only Fx 4 supporting transitions on psuedo elements so far... */
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  opacity: 0.75;	
+}
+
+
+figcaption:hover {
+  opacity: 1;
+  left: 0;
+}
+
 
 .header {
 	width: 100vw;
@@ -40,7 +96,7 @@ html {
 
 .header h1 + p, details {
 	color: #797478;
-	font: 1.7em/1.5 Verdana, Helvetica, sans-serif;
+	font: 1.6em/1.5 Verdana, Helvetica, sans-serif;
 	padding-top: 1em;
 }
 
@@ -66,32 +122,51 @@ details h3 {
 }
 
 .shell {
+	  position: relative;
 	  overflow: hidden;
   	border: 0px solid red;
 	padding: 0;
+
 }
+
+.shell:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  content: "play_arrow";
+font-family: "Material Icons";
+  font-size: 3.5em;
+  color: #fff;
+  background-color: #000;
+  opacity: .2;
+}
+
 
 .shell img { 
   width: 100%; 
   height: auto;
   	border: 0px solid blue;
-	    opacity: 1; 
+	    opacity: 1;	
 }
-.shell img:hover {
-	opacity: 0.8;
+.shell:hover {
+opacity: .8;
 }
 
 .galleryItem h3 {
 	color: #797478;
-	font: 1.4em/1 Verdana, Helvetica, sans-serif;
-	padding-top: 0em;
-	padding-left: 1.3vw;
+	font: 1.4em/1.2 Verdana, Helvetica, sans-serif;
+	padding-top: 0.5em;
+	padding-left: .7em;
+	padding-right: .7em;
 	border: 0px solid green;
 
 }
 h4 {
-	padding-left: 1.3vw;
+	padding-left: .7em;
+	padding-right: .7em;
 	color: #797478;
 	font: 1.1em/1.5 Verdana, Helvetica, sans-serif;
+	padding-top: 1em;	
 	padding-bottom: 1.5em;
 }
