@@ -232,3 +232,7 @@ replaybutton.onclick = function restart() {
 function restart() {
   audio1.currentTime = 0; audio1.playbackRate = 1; audio1.pause(); tl.timeScale(1); tl.restart(0).pause(); playpause.innerHTML = "<i class='material-icons'>play_circle_filled</i>"; time.innerHTML = "0.00";
 };
+
+//GET, TRIM AND DISPLAY URL FOR SHARE MODAL
+var x = window.location.href.split('#')[0];
+document.getElementById("url2").innerHTML = x;

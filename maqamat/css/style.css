@@ -139,7 +139,7 @@ font-family: "Material Icons";
   font-size: 3.5em;
   color: #fff;
   background-color: #000;
-  opacity: .2;
+  opacity: .4;
 }
 
 
@@ -150,7 +150,7 @@ font-family: "Material Icons";
 	    opacity: 1;	
 }
 .shell:hover {
-opacity: .8;
+opacity: .9;
 }
 
 .galleryItem h3 {

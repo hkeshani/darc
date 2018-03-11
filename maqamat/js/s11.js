@@ -97,7 +97,7 @@ tl.to("#startscreen, #subtitleswindow", 0.5, {opacity: 0}, "+=0.5")
 })
 
 //ADD PAUSE
-  .set({}, {}, "+=50.00")
+  .set({}, {}, "+=54.00")
 
 //end sequence
 	.set ("#startscreen", {zIndex: 0})
