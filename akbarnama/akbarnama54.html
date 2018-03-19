@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>A Mosaic Garden</title>
+	<link rel="stylesheet" href="css/la1-m.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Work+Sans|PT+Sans+Narrow" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<meta name="robots" content="noindex," "noimageindex," "nofollow">
+	<!-- doesn't seem to be needed <meta name="viewport" content="width=device-width,initial-scale=1">-->
+</head>
+
+<body>
+<script src="js/NoSleep.min.js"></script>
+	<div id="div1" class="outer">
+		<div class="inner">			
+			<img id="picture1" src="assets/images/akbarnama54-1.jpg">
+		</div>
+	</div>
+	
+<!-- for multiple images-->	
+	<div id="div2" class="outer" style="transform: translateY(-100%);">
+		<div class="inner">			
+			<img id="picture2" src="assets/images/akbarnama54-2.jpg" style="opacity:0;">
+		</div>
+	</div>	
+<!---->
+
+
+<!-- overlay -->
+<div id="startscreen" class="tint">
+	<span id="title">Akbar</span>
+	<br>
+	<span id="place-date">V&A Akbarnam 54</span>
+	<br>
+	<span id="timelength">(2:52 min.)</span>
+	<br>
+	<br>
+	<br>
+	<button id="playr">
+	<span id="play1">START</span>
+	<br>
+<!--	<br>
+	<span id="playsub">When you see the pillars</span>
+-->
+	</button>
+	<br><br><br>
+
+<a href="#openModal" id="works">Akbarnama Project</a>
+
+<div id="openModal" class="modalDialog">
+    <div>	<a href="#close" title="Close" class="close">X</a>
+
+        	<p class="modaltitle">Akbarnama Project</p>
+
+<div class="detailsblurb2">Parent, Shane <em>Akbarnama Project</em>
+
+				</div>
+      </div>
+    </div>
+	<br><br>	
+<a href="#openModal2" id="cite">Cite This & Sources</a>
+
+<div id="openModal2" class="modalDialog">
+    <div>	<a href="#close" title="Close" class="close">X</a>
+
+        	<p class="modaltitle">Cite This</p>
+
+<div  class="detailsblurb2">Shane Parent, <em>Akbarnama Project</em>		
+								</div>
+<p class="modaltitle">Sources</p>
+
+	<div  class="detailsblurb2">La’l (Composition), Sanwala (Painting). Akbar. Mughal Empire. ca. 1590-95. Opaque watercolour and gold on paper, 32.8 x 19.3cm. Victoria and Albert Museum, London, U.K., IS.2:54-1896.				
+				
+				</div>		
+
+	<div  class="detailsblurb2">Beveridge, H. The Akbarnama of Abul Fazl: History of the reign of Akbar including and account of his predecessors, Volume II. 418-20. Calcutta: The Asiatic Society, 1907. URL: https:// archive.org/details/in.ernet.dli.2015.189290. Accessed February 8th 2018.				
+				
+				</div>	
+
+	<div  class="detailsblurb2">Lally, Jagjeet. 2015. Empires and equines: The horse in art and exchange in south asia, ca. 1600-ca. 1850. Comparative Studies of South Asia, Africa and the Middle East 35 (1): 96-116.		
+				
+				</div>				
+
+	<div  class="detailsblurb2">Latif, Syad, Bahadur Khan, et. al. Agra-Historical & Descriptive, with an Account of Akbar and his Court and of the Moaern City of Agra. CALCUTTA CENTRAL PRESS COMPANY, LIMITED. Calcutta, 1896.	
+				
+				</div>				
+
+	<div  class="detailsblurb2">E's Jammy Jams. Maple Leaf Rag. Mp3. Youtube Free Audio Library. https://www.youtube.com/audiolibrary/music
+				
+				</div>	
+				
+				
+      </div>
+    </div>
+	<br><br>	
+<a href="essay1.html" id="essay">Essay</a>
+	<br><br>	
+<a href="#openModal3"><i class="material-icons" id="share">share</i></a>
+
+<div id="openModal3" class="modalDialog">
+    <div>	<a href="#close" title="Close" class="close">X</a>
+
+
+
+	<br><br>	
+        	<p class="modaltitle">SHARE</p>
+
+<div id="sm" class="detailsblurb2">
+<span ><a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank"><img id="fb" src="assets/images/FB-f-Logo__white_100.png"/></a>
+<a href="mailto:?Subject=The%20Aga%20Khan%20Garden" target="_top">
+<img id="gm" src="assets/images/ic_mail_outline_white_48dp_2x.png"/>
+</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false"  target="_blank"><img id="tw" src="assets/images/Twitter_Logo_WhiteOnImage.png"/></a>
+<br><br>Copy and share the following link on your favourite social media platform.
+<br><p id="url"></p>
+<p>You can also use the menu in your browser to share.</p>
+
+</span>
+
+				</div>
+      </div>
+    </div>
+
+
+	
+</div>	
+ 
+
+</div>
+
+<!-- buttons -->
+	<button id="backbutton" class="button-style" onclick="back()"><i class="material-icons">close</i></button>
+
+
+
+<!-- buttons -->
+	<div id="mediabuttons">
+<!-- SUBTITLES DIV -->			
+<section id="subtitleswindow">
+  <div><div>test1</div><div>asdf2</div></div>
+</section>
+		<span id="morebuttons">
+			
+			<button id="replaybutton" class="button-style"><i class="material-icons">replay</i></button><!--btn1-->
+			<!--<button id="btn2" class="bcss"><i class="material-icons">fast_forward</i></button>-->
+			<button id="rewind5" class="button-style"><i class="material-icons">replay_5</i> </button>
+			<button id="forward5" class="button-style"><i class="material-icons">forward_5</i></button>
+			<button id="time" class="button-style2">0.00</button>
+		</span>
+<span id="mainbuttons">
+		<button id="togglemorebuttons" class="button-style"><i class="material-icons">more_horiz</i></button>
+		<button id="subtitlestoggle" class="button-style"><i class="material-icons">chat</i></button>
+		<button id="playpause" class="button-style"><i class="material-icons"><i class="material-icons">play_circle_filled</i></button>
+</span>
+  </div>
+<audio id="audio1"><source src="assets/audio/akbarnama54.mp3" type="audio/mp3" />
+<track label="English subtitles" kind="subtitles" srclang="en" src="assets/audio/akbarnama54.vtt" default>
+    Your browser does not support the video tag
+</audio>	
+
+<!--
+<script src="js/greensock-js/src/minified/TweenMax.min.js">
+</script>
+-->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+<script src="js/la1-14.js">
+</script>
+<script>
+var pic1 = document.getElementById("picture1");
+var pic2 = document.getElementById("picture2");
+
+var tl = new TimelineMax({paused:true,onUpdate:updatetime,onComplete:restart});
+
+tl.timeScale(1);
+
+
+//SET POSITION - 0S
+tl.to("#startscreen, #subtitleswindow", 0.5, {opacity: 0}, "+=0.5")
+.call(enableNoSleep)
+  .set ("#startscreen", {zIndex: -1})
+  
+//1-PAUSE
+  .set({}, {}, 3.0 )
+  
+//2-ZOOM 
+  .to(pic1, 15.348, {
+  scale: 1.04,
+  xPercent: 0,
+  yPercent: 0,
+  opacity:1,
+  ease: Power1.easeInOut
+})  
+
+//4-PAN 
+  .to(pic1, 3.731, {
+  scale: 1.6,
+  xPercent: -25,
+  yPercent: -10,
+  ease: Power1.easeInOut
+}) 
+
+//5-ZOOM 
+  .to(pic1, 12.0, {
+  scale: 2.5,
+  xPercent: -50,
+  yPercent: -30,
+  ease: Power1.easeInOut
+})  
+
+//6-ZOOM 
+  .to(pic1, .5, {
+  scale: 1.6,
+  xPercent: -25,
+  yPercent: -10,
+  ease: Power1.easeInOut
+})  
+
+//7-ZOOM 
+  .to(pic1, 12.452, {
+  scale: 2.8,
+  xPercent: -15,
+  yPercent: 20,
+  ease: Power1.easeInOut
+})  
+
+//8-ZOOM ????
+  .to(pic1, 15.75, {
+  scale: 2.80,
+  xPercent: -15,
+  yPercent: 20,
+  ease: Power1.easeInOut
+})  
+
+
+//9-PAN 
+  .to(pic1, 2.5, {
+  scale: 2.9,
+  xPercent: -40,
+  yPercent: 20,
+  ease: Power1.easeInOut
+}) 
+
+//10-ZOOM ????
+  .to(pic1, 15.1, {
+  scale: 2.9,
+  xPercent: -40,
+  yPercent: 20,
+  ease: Power1.easeInOut
+}) 
+
+//10-ZOOM ????
+  .to(pic1, 1, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+  ease: Power1.easeInOut
+})  
+
+//10-ZOOM ????
+  .to(pic1, .7, {
+  scale: 2.8,
+  xPercent: -60,
+  yPercent: -88,
+  ease: Power1.easeInOut
+})  
+
+
+//10-ZOOM ????
+  .to(pic1, 14.03, {
+  scale: 2.8,
+  xPercent: -60,
+  yPercent: -50,
+  ease: Power1.easeInOut
+})  
+
+//10-ZOOM ????
+  .to(pic1, 1, {
+  scale: 2.8,
+  xPercent: -40,
+  yPercent: -88,
+  ease: Power1.easeInOut
+})  
+
+//10-ZOOM ????
+  .to(pic1, 5.7, {
+  scale: 2.8,
+  xPercent: -0,
+  yPercent: -88,
+  ease: Power1.easeInOut
+})  
+
+
+//10-ZOOM ????
+  .to(pic1, 1, {
+  scale: 1,
+  xPercent: -0,
+  yPercent: -0,
+  ease: Power1.easeInOut
+})  
+
+//10-ZOOM ????
+  .to(pic1, 4, {
+  scale: 1,
+  xPercent: -0,
+  yPercent: -0,
+  ease: Power1.easeInOut
+})  
+
+//9-PAN 
+  .to(pic1, 1.5, {
+  scale: 2.9,
+  xPercent: -35,
+  yPercent: 20,
+  ease: Power1.easeInOut
+}) 
+
+//9-PAN 
+  .to(pic1, 1.25, {
+  scale: 2.9,
+  xPercent: -35,
+  yPercent: 20,
+  ease: Power1.easeInOut
+}) 
+
+//5-ZOOM 
+  .to(pic1, 3, {
+  scale: 2.5,
+  xPercent: -50,
+  yPercent: -30,
+  ease: Power1.easeInOut
+})  
+
+//5-ZOOM 
+  .to(pic1, 3, {
+  scale: 2.5,
+  xPercent: -50,
+  yPercent: -80,
+  ease: Power1.easeInOut
+})  
+
+//5-ZOOM 
+  .to(pic1, 4.4, {
+  scale: 2.5,
+  xPercent: -40,
+  yPercent: -80,
+  ease: Power1.easeInOut
+})  
+
+//5-ZOOM 
+  .to(pic1, 0.01, {
+  scale: 1.0,
+  xPercent: -0,
+  yPercent: -0,
+  ease: Power1.easeInOut
+})  
+
+//5-ZOOM 
+  .to(pic1, 20, {
+  scale: 1.25,
+  xPercent: -0,
+  yPercent: -0,
+  ease: Power1.easeInOut
+})  
+
+//9-PAN 
+  .to(pic1, 2.5, {
+  scale: 2.9,
+  xPercent: -10,
+  yPercent: 20,
+  ease: Power1.easeInOut
+}) 
+
+//9-PAN 
+  .to(pic1, 10, {
+  scale: 2.9,
+  xPercent: -10,
+  yPercent: 20,
+  ease: Power1.easeInOut
+}) 
+
+//9-PAN 
+  .to(pic1, 17, {
+  scale: 1.2,
+  xPercent: 0,
+  yPercent: 0,
+  ease: Power1.easeInOut
+}) 
+
+//9-PAN 
+  .to(pic1, 3, {
+  scale: 1.2,
+  xPercent: 0,
+  yPercent: 0,
+  ease: Power1.easeInOut
+}) 
+
+//9-PAN 
+  .to(pic1, 8.5, {
+  scale: 1.2,
+  xPercent: 0,
+  yPercent: 0,
+  ease: Power1.easeInOut
+}) 
+
+//ENDING  
+  .set(pic1, {
+  scale: 1.2,
+  xPercent: 0,
+  yPercent: 0,
+  ease: Sine.easeInOut
+})
+  .to(pic1, 4.5, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+  opacity:0,
+  ease: Sine.easeInOut
+})
+
+
+//WHERE I AM RIGHT NOW>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+//end sequence
+	.set ("#startscreen", {zIndex: 0})
+	.to("#startscreen", 0.5, {opacity: 1})
+	.call(disableNoSleep)
+</script>
+
+
+</body>
+
+</html>

@@ -8,7 +8,7 @@ window.addEventListener('scroll', noscroll);
 
 // back button
 function back() {
-window.location.href = "la1.html#back";
+window.history.go(-1);
 };
 
 // play-pause button
@@ -165,3 +165,7 @@ function enableNoSleep() {
 function disableNoSleep() {
   noSleep.disable();
 }
+
+//GET, TRIM AND DISPLAY URL FOR SHARE MODAL
+var x = window.location.href.split('#')[0];
+document.getElementById("url2").innerHTML = x;
