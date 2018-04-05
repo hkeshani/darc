@@ -150,8 +150,8 @@ Fazl, Abu'l. The Akbarnama of Abu'l Fazl Volume II. Translated by Henry Beveridg
 		<button id="playpause" class="button-style"><i class="material-icons"><i class="material-icons">play_circle_filled</i></button>
 </span>
   </div>
-<audio id="audio1"><source src="assets/audio/Akbarnama19.mp3" type="audio/mp3" />
-<track label="English subtitles" kind="subtitles" srclang="en" src="assets/audio/Akbarnama19.vtt" default>
+<audio id="audio1"><source src="assets/audio/akbarnama19.mp3" type="audio/mp3" />
+<track label="English subtitles" kind="subtitles" srclang="en" src="assets/audio/akbarnama19.vtt" default>
     Your browser does not support the video tag
 </audio>	
 
@@ -166,13 +166,7 @@ Fazl, Abu'l. The Akbarnama of Abu'l Fazl Volume II. Translated by Henry Beveridg
 </script>
 <script>
 var pic1 = document.getElementById("picture1");
-var pic2 = document.getElementById("picture2");
-var pic3 = document.getElementById("picture3");
-var pic4 = document.getElementById("picture4");
-var pic5 = document.getElementById("picture5");
-var pic6 = document.getElementById("picture6");
-var pic7 = document.getElementById("picture7");
-var pic8 = document.getElementById("picture8");
+
 var tl = new TimelineMax({paused:true,onUpdate:updatetime,onComplete:restart});
 
 tl.timeScale(1);
@@ -283,10 +277,8 @@ tl.to("#startscreen, #subtitleswindow", 0.5, {opacity: 0}, "+=0.5")
 
 
 //1-PAUSE
-  .set({}, {}, "+=5.18")    
+  .set({}, {}, "+=30.18")    
     
-//ADD PAUSE
-  .set({}, {}, "+=32.85")
 
 //end sequence
 	.set ("#startscreen", {zIndex: 0})
