@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Work+Sans|PT+Sans+Narrow" rel="stylesheet" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <meta name="robots" content="noindex," />
-    <!-- doesn't seem to be needed <meta name="viewport" content="width=device-width,initial-scale=1">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
   </head>
   <body>
   <script src="js/NoSleep.min.js"></script>
@@ -101,7 +101,7 @@
     </div>
     <br />
     <br />
-    <a href="#openModal2" id="cite">Cite This &amp; Sources</a>
+    <a href="#openModal2" id="cite">Credits</a>
     <div id="openModal2" class="modalDialog">
       <div>
         <a href="#close" title="Close" class="close">X</a>
@@ -228,9 +228,10 @@ tl.timeScale(1);
 
 //SET POSITION - 0S
 tl.to("#startscreen, #subtitleswindow", 0.5, {opacity: 0}, "+=0.5")
+.to("#mediabuttons", 0.5, {opacity: 1}, "-=0.5")
 .call(enableNoSleep)
   .set ("#startscreen", {zIndex: -1})
-  
+
 //1-PAUSE
   .set({}, {}, "+=9.18")
 
