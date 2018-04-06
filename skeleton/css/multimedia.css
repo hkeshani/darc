@@ -222,10 +222,10 @@ left: 0;
   font-size: 1.75em;
 
   opacity: 1;
-  max-width: 54vh;
-  padding-top:7.5vh;
-  padding-left: 1.5vh;
-  padding-right: 1.5vh;
+  /* max-width: 54vh; */
+  /* padding-top:7.5vh; */
+  /* padding-left: 1.5vh; */
+  /* padding-right: 1.5vh; */
   display: inline-block;
     border: 0px solid red;
 }
@@ -387,4 +387,22 @@ background-color: black;
 #url {
 	font-weight: bold;
 	font-size: 1.5em;
+}
+
+.listing {
+  width: 100%;
+  padding: 5em 0 0 0;
+  list-style: none;
+  margin: 0;
+  display: grid;
+  grid-gap: 1.5em;
+  grid-template-columns: repeat(auto-fill,minmax(12em, 1fr));
+  border: 0px solid red;
+}
+.listing li {
+  display: flex;
+  flex-direction: column;
+    	border: 0px solid red;
+		    align-items: center;
+
 }
