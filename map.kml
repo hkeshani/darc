@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Lake County Points</name>
+    <Style id="poly-000000-1200-77-normal">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>1.2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d000000</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-000000-1200-77-highlight">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>1.8</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d000000</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-000000-1200-77">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-000000-1200-77-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-000000-1200-77-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>Polygon 1</name>
+      <description><![CDATA[<img onload="document.getElementById('myLink').click()" src="https://lh3.googleusercontent.com/proxy/BBk23F_rpeEkbPaQDYVEmf-NeuwOBBtHRFFVk1Vke5whCktmecG73LZdT6LHwKcNznYsooVbvDTClV_AWfXB2oteJZsZZeG2PCreGlxO3A" height="200" width="auto" />
+<a id="myLink" href="https://hkeshani.github.io/darc/may22-2018-demo/la1-14.html";>LINK 1</a>]]></description>
+      <styleUrl>#poly-000000-1200-77</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -119.4168001,50.0729772,0
+              -119.4168457,50.0728102,0
+              -119.4167224,50.0727982,0
+              -119.4166821,50.0729634,0
+              -119.4168001,50.0729772,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>Polygon 2</name>
+      <description>Spot2</description>
+      <styleUrl>#poly-000000-1200-77</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -119.4167277,50.0735178,0
+              -119.416784,50.0733542,0
+              -119.4165212,50.0733215,0
+              -119.4164863,50.0734816,0
+              -119.4167277,50.0735178,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+  </Document>
+</kml>
