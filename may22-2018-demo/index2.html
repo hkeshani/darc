@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Work+Sans" rel="stylesheet">	
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="js/helpers.js"></script>
 <script type="text/javascript">
@@ -250,7 +251,74 @@ $(document).ready(function(){
 
 </head>
 <body>
-
+<div id="master">
+	<div class="titlePage">
+		  <div id="love">
+			<div><span class="title">Painted Gardens</span></div>
+			<div id="displayDescription"></div>
+			<div id="displayName">Searching...</div>
+		  </div>
+	</div>
+	
+	<div id="bg">
+		<img id="bgimg" src="assets/images/map-v.jpg"></img>
+	    <div id="markers"> 
+			<span id="ad1" class="m" onclick="location.href = 'la1-11.html' ">
+			<svg viewBox="-27 -30 50 50" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+			<path id="path5"  d="m -1.62384,-28.8345 13.82494,13.825 c 7.6402,7.64012 7.6401,20.00981 0,27.6499 l 0,0 c -7.6401,7.6402 -20.00979,7.6402 -27.6499,0 l 0,0 c -7.6401,-7.64009 -7.6401,-20.00978 0,-27.6499 l 13.82496,-13.825 z" />
+			</defs>
+			<use xlink:href = "#path5" />
+			</svg>
+			</span>
+			<span id="ad2" class="m" onclick="location.href = 'la1-5.html' "><svg viewBox="-27 -30 50 50">
+			<use xlink:href = "#path5" /></svg>
+			</span>
+			<span id="ad3" class="m" onclick="location.href = 'la1-3.html' "><svg viewBox="-27 -30 50 50">
+			<use xlink:href = "#path5" /></svg>
+			</span>
+			<span id="ad4" class="m" onclick="location.href = 'la1-1.html' "><svg viewBox="-27 -30 50 50">
+			<use xlink:href = "#path5" /></svg>
+			</span>
+			<span id="ad5" class="m" onclick="location.href = 'la1-14.html' "><svg viewBox="-27 -30 50 50">
+			<use xlink:href = "#path5"/></svg>
+			</span> 
+			<span id="ad6" class="m" onclick="location.href = 'la1-12.html' "><svg viewBox="-27 -30 50 50">
+			<use xlink:href = "#path5" /></svg>
+			</span>  
+			<span id="ad7" class="m" onclick="location.href = 'la1-10.html' "><svg viewBox="-27 -30 50 50">
+			<use xlink:href = "#path5" /></svg>
+			</span>
+			<span id="ad8" class="m" onclick="location.href = 'la1-8.html' "><svg viewBox="-27 -30 50 50">
+			<use xlink:href = "#path5" /></svg>
+			</span>
+			<span id="ad9" class="m" onclick="location.href = 'la1-6.html' "><svg viewBox="-27 -30 50 50">
+			<use xlink:href = "#path5" /></svg>
+			</span>
+			<span id="ad10" class="m" onclick="location.href = 'la1-4.html' "><svg viewBox="-27 -30 50 50">
+			<use xlink:href = "#path5" /></svg>
+			</span>
+			<span id="ad11" class="m" onclick="location.href = 'la1-13.html' "><svg viewBox="-27 -30 50 50">
+			<use xlink:href = "#path5" /></svg>
+			</span>
+			<span id="ad12" class="m" onclick="location.href = 'la1-7.html' "><svg viewBox="-27 -30 50 50">
+			<use xlink:href = "#path5" /></svg>
+			</span>
+			<span id="ad13" class="m" onclick="location.href = 'la1-9.html' "><svg viewBox="-27 -30 50 50">
+			<use xlink:href = "#path5" /></svg>
+			</span>
+			<span id="ad14" class="m" onclick="location.href = 'la1-2.html' "><svg viewBox="-27 -30 50 50">
+			<use xlink:href = "#path5" /></svg>
+			</span>
+			<span id="ad15" class="m" onclick="location.href = 'la1-2.html' "><svg viewBox="-27 -30 50 50">
+			<use xlink:href = "#path5" /></svg>
+			</span>          
+		</div>
+	</div>
+</div>
+<button id="backbutton" class="button-style" onclick="back()"><i class="material-icons">close</i></button>
+	
+<!--
 <div id="imagediv">
 	<img id="map" src="gardenmap.png" alt="map" width="667" height="976">
 	<div id="title">Painting Gardens
@@ -279,7 +347,7 @@ $(document).ready(function(){
 	<textarea id="counter" cols="3" rows="1"></textarea>
 	<textarea id="currentpos" cols="20" rows="5"></textarea><br/>
 	<textarea id="debugOutput" cols="80" rows="45"></textarea><br/>
-
+-->
 	
 
 </body>
