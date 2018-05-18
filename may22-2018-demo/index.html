@@ -1,11 +1,9 @@
-<!DOCTYPE html>
 <html>
-
 <head>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="js/helpers.js"></script>
-
-<!--Geolocation js begin-->
 <script type="text/javascript">
 // thanks to
 // Scott Andrew for inpoly
@@ -244,121 +242,179 @@ $(document).ready(function(){
 
 
 </script>
-<!--Geolocation js end-->
+<style>
+body {
+	display: flex;
+	justify-content: center;
+	background: white;
+	margin: 0;
+	padding: 0;
+	border: 0px solid blue;
 
-  <meta charset="UTF-8">
-  <title>Painted Gardens</title>
-  
-  		<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Work+Sans" rel="stylesheet">	  
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
-      <link rel="stylesheet" href="css/la1.css">
+}
 
-<!--hides webpage from search engines along with robots.txt file in root directory-->
-<meta name="robots" content="noindex," "noimageindex," "nofollow">   
+#displayName{
+	position: fixed;
+	left: 0vw;
+	width: 100vw;
+	bottom: 0vh;
+	padding: 0px;
+	color: #f06; 
+	background-color: #eee;
+	text-align: center;	
+	font-family: helvetica, arial, sans-serif;
+	font-weight: bold;
+	border: 0px solid green;
+	z-index: 5;
+	opacity: .6;
+	}
+	
+#displayDescription{
+	border: 0px solid red;
+	z-index: 5;
+	}
+
+
+#counter, 
+#currentpos, 
+#debugoutput{
+	display:none;
+	}
+
+#imagediv {
+	width: 68.3vh;
+	height: 100vh;
+	border: 0px solid red;
+	z-index: 2;
+	overflow: hidden;
+}
+
+#imagediv img {
+   height: 100%;
+   width: 100%;
+   z-index: 3;
+}
+
+#spotdiv {
+	width: 68.3vh;
+	height: 100vh;
+	border: 0px solid red;
+	z-index: 2;
+}
+
+#spot {
+position: fixed;
+top: 80vh;
+left: 50%;
+color: red;
+font-size: 6vh;
+border: 0px solid red;
+z-index: 2;
+}
+
+#backbtn {
+position: fixed;
+top: 0vh;
+padding-top: 0vh;
+padding-left: 1vw;
+color: white;
+font-size: 7vh;
+font-weight: normal;
+	font-family: "Verdana";
+	z-index: 3;
+	opacity: .5;
+	border: 0px solid red;
+}
+
+#title {
+position: fixed;
+top: 0vh;
+width: 68.3vh;
+background: black;
+opacity: .5;
+font-size: 5vh;
+font-family: "Verdana";
+color: white;
+text-align: center;
+padding-top: 1vh;
+padding-bottom: 1vh;
+z-index: 2;
+border: 0px solid red;
+}
+
+
+
+#instructions {
+position: fixed;
+width: 62.4vh;
+height: 95vh;
+top: 10vh;
+background: black;
+opacity: .5;
+padding: 3vh;
+color: white;
+text-align: center;
+font-size: 4vh;
+font-family: "Verdana";
+z-index: 4;
+border: 0px solid red;
+}
+
+	
+</style>
 </head>
-
 <body>
-  <div id="master">
-  
-<div class="titlePage">
-  
 
-  <div id="love">
-    
-    <div>
-      <span class="title">Painted Gardens</span>
-
-    </div>
-      
-    <div class="blurb">
-
-        <details class="details" open onClick="changeBackground()">
-          <summary id="titlePage">START<div id="displayName">Searching...<div>
-	<div id="displayDescription"><div></summary><p>A collection of garden paintings from the Islamic world is waiting to be discovered.</p><p>Wander the garden and your device will notify you when you find a painting.</p><p>Or, just tap the red markers on the map when you reach the right spot.</p><p>Press START and enjoy!</p><p> 1 stop ~ 2 min. | all stops ~ 36 min.</p>
-
-		  </details>
-    </div>
-  
-  </div> 
-
+<div id="imagediv">
+	<img id="map" src="gardenmap.png" alt="map" width="667" height="976">
+	<div id="title">Painting Gardens
+	</div>
+	<div id="instructions" onclick="fade()">
+	There are 6 paintings to discover in the garden!<br><br>
+	Wander the garden, and your phone will notify you when you come across a painting to look at on your phone. 
+	<br>
+	<br>
+	Alternatively, you can tap on the red markers.
+	<br>
+	<br>
+	TAP TO BEGIN
+	</div>
+		
+	<div id="backbtn" onclick="back()"><
+	</div>
+<div id="spotdiv">
+<i id="spot" class="fa fa-map-marker" onclick="video1()"></i>
 </div>
-  
-  
-  
-  <div id="bg">
 
-   <img id="bgimg" src="assets/images/map-v.jpg"></img>
-   
-    <div id="markers"> 
-      <span id="ad1" class="m" onclick="location.href = 'la1-11.html' ">
-      <svg viewBox="-27 -30 50 50" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <path id="path5"  d="m -1.62384,-28.8345 13.82494,13.825 c 7.6402,7.64012 7.6401,20.00981 0,27.6499 l 0,0 c -7.6401,7.6402 -20.00979,7.6402 -27.6499,0 l 0,0 c -7.6401,-7.64009 -7.6401,-20.00978 0,-27.6499 l 13.82496,-13.825 z" />
-      </defs>
-      <use xlink:href = "#path5" />
-      </svg>
-    </span>
-      <span id="ad2" class="m" onclick="location.href = 'la1-5.html' "><svg viewBox="-27 -30 50 50">
-      <use xlink:href = "#path5" /></svg>
-    </span>
-      <span id="ad3" class="m" onclick="location.href = 'la1-3.html' "><svg viewBox="-27 -30 50 50">
-      <use xlink:href = "#path5" /></svg>
-    </span>
-      <span id="ad4" class="m" onclick="location.href = 'la1-1.html' "><svg viewBox="-27 -30 50 50">
-      <use xlink:href = "#path5" /></svg>
-    </span>
-      <span id="ad5" class="m" onclick="location.href = 'la1-14.html' "><svg viewBox="-27 -30 50 50">
-      <use xlink:href = "#path5"/></svg>
-    </span> 
-      <span id="ad6" class="m" onclick="location.href = 'la1-12.html' "><svg viewBox="-27 -30 50 50">
-      <use xlink:href = "#path5" /></svg>
-    </span>  
-      <span id="ad7" class="m" onclick="location.href = 'la1-10.html' "><svg viewBox="-27 -30 50 50">
-      <use xlink:href = "#path5" /></svg>
-    </span>
-      <span id="ad8" class="m" onclick="location.href = 'la1-8.html' "><svg viewBox="-27 -30 50 50">
-      <use xlink:href = "#path5" /></svg>
-    </span>
-      <span id="ad9" class="m" onclick="location.href = 'la1-6.html' "><svg viewBox="-27 -30 50 50">
-      <use xlink:href = "#path5" /></svg>
-    </span>
-      <span id="ad10" class="m" onclick="location.href = 'la1-4.html' "><svg viewBox="-27 -30 50 50">
-      <use xlink:href = "#path5" /></svg>
-    </span>
-      <span id="ad11" class="m" onclick="location.href = 'la1-13.html' "><svg viewBox="-27 -30 50 50">
-      <use xlink:href = "#path5" /></svg>
-    </span>
-      <span id="ad12" class="m" onclick="location.href = 'la1-7.html' "><svg viewBox="-27 -30 50 50">
-      <use xlink:href = "#path5" /></svg>
-    </span>
-      <span id="ad13" class="m" onclick="location.href = 'la1-9.html' "><svg viewBox="-27 -30 50 50">
-      <use xlink:href = "#path5" /></svg>
-    </span>
-      <span id="ad14" class="m" onclick="location.href = 'la1-2.html' "><svg viewBox="-27 -30 50 50">
-      <use xlink:href = "#path5" /></svg>
-    </span>
-      <span id="ad15" class="m" onclick="location.href = 'la1-2.html' "><svg viewBox="-27 -30 50 50">
-      <use xlink:href = "#path5" /></svg>
-    </span>          
-    </div>
-  
-  </div>
-  
+		<div id="displayDescription"></div>
+		<div id="displayName">Searching...</div>
 
+	
+	<textarea id="counter" cols="3" rows="1"></textarea>
+	<textarea id="currentpos" cols="20" rows="5"></textarea><br/>
+	<textarea id="debugOutput" cols="80" rows="45"></textarea><br/>
 
-
-
-</div>
-	<button id="backbutton" class="button-style" onclick="back()"><i class="material-icons">close</i></button>
-
-
-
-
-
-  
-
-  
-    <script src="js/la1.js"></script>
+	
 
 </body>
+<script>
+
+	
+function video1() {
+	location.href = "la1-14.html";
+};
+
+function back() {
+    window.history.back();
+};
+
+function fade() {
+var instructions = document.getElementById("instructions");
+instructions.style.opacity=0;
+instructions.style.zIndex="1";
+};
+
+
+</script>
 </html>
+
