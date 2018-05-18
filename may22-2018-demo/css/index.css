@@ -16,33 +16,7 @@ body {
 }
 
 
-#displayName{
-	position: fixed;
-	left: 0vw;
-	width: 100vw;
-	bottom: 0vh;
-	padding: 0px;
-	color: #f06; 
-	background-color: #eee;
-	text-align: center;	
-	font-family: helvetica, arial, sans-serif;
-	font-weight: bold;
-	border: 0px solid green;
-	z-index: 5;
-	opacity: .6;
-	}
-	
-#displayDescription{
-	border: 0px solid red;
-	z-index: 5;
-	}
 
-
-#counter, 
-#currentpos, 
-#debugoutput{
-display:none;
-	}
 
 #imagediv {
 	width: 68.3vh;
@@ -122,3 +96,30 @@ font-family: "Verdana";
 z-index: 4;
 border: 0px solid red;
 }
+
+#displayName{
+	position: fixed;
+	left: 0vw;
+	width: 100vw;
+	bottom: 0vh;
+	padding: 0px;
+	color: #f06; 
+	background-color: #eee;
+	text-align: center;	
+	font-family: helvetica, arial, sans-serif;
+	font-weight: bold;
+	border: 0px solid green;
+	z-index: 5;
+	opacity: .6;
+	}
+	
+#displayDescription{
+	border: 0px solid red;
+	z-index: 5;
+	}
+
+#counter, 
+#currentpos, 
+#debugoutput{
+display:none;
+	}
