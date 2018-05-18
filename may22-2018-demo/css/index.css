@@ -26,7 +26,43 @@ body {
   z-index: 0;
 }
 
+.titlePage {
+  position: fixed;
+  width: 100vw;
+  padding: 5vh;
+  right: 0vh;
+  top: 0vh;
+  border: 0px solid red;
+  color: white;
+  text-shadow:1px 1px 1px rgba(0,0,0,0.7);
+  text-align: right;
+  z-index: 99;
+  border: 0px solid red;
+}
 
+#love {
+position: fixed;
+  background-color: rgba(54, 25, 25, .7);
+  top: 1vh;
+  right: 7vh;
+  width: 70vw;
+    padding-top: 2vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+max-height: 85vh;
+    border: 0px solid gray;
+  overflow: hidden;
+    overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.title {
+  font-family: 'Libre Baskerville', serif;
+  font-variant: small-caps;
+  font-size: 5vh;
+  width: 50vw;
+  border: 0px solid red;
+}
 
 #imagediv {
 	width: 68.3vh;
