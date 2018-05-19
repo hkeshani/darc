@@ -97,8 +97,8 @@ max-height: 85vh;
 
 .m {
   position: absolute;
-  width: 4em;
-  height: 4em;
+  width: .1em;
+  height: .1em;
   transform-origin: 50% 50%;
   border: 0px solid green;
  
@@ -109,7 +109,7 @@ max-height: 85vh;
 #ad1 {
   left: 2%;
   top: 93%;
-  transform: rotate(60deg) scale(1);
+  transform: rotate(60deg) scale(25);
 }
 
 
