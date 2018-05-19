@@ -90,6 +90,16 @@ max-height: 85vh;
   
 }
 
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
 #path5 {
   fill:#ba3b3b;
   fill-opacity:0.4;
@@ -106,7 +116,6 @@ max-height: 85vh;
   height: 2.5em;
   transform-origin: 50% 50%;
   border: 0px solid green;
-  user-select: none;
 }
 
 .m:hover { opacity: .3; }
