@@ -36,7 +36,11 @@
     </StyleMap>
     <Placemark>
       <name>FOUND SOMETHING!</name>
-      <description><![CDATA[<body onload=window.location="https://hkeshani.github.io/darc/may22-2018-demo/la1-14.html">]]></description>
+      <description><![CDATA[<body onload=window.location='https://hkeshani.github.io/darc/may22-2018-demo/la1-14.html'>
+	  
+	  
+	  <body onload="document.getElementById('myLink').click()" >
+<a id="myLink" href="https://hkeshani.github.io/darc/may22-2018-demo/la1-14.html";>LINK 1</a>]]></description>
       <styleUrl>#poly-000000-1200-77</styleUrl>
       <Polygon>
         <outerBoundaryIs>
@@ -55,7 +59,7 @@
     </Placemark>
     <Placemark>
       <name>FOUND SOMETHING!</name>
-      <description><![CDATA[
+      <description><![CDATA[<img onload="document.getElementById('myLink').click()" src="https://lh3.googleusercontent.com/proxy/BBk23F_rpeEkbPaQDYVEmf-NeuwOBBtHRFFVk1Vke5whCktmecG73LZdT6LHwKcNznYsooVbvDTClV_AWfXB2oteJZsZZeG2PCreGlxO3A" height="200" width="auto" />
 <a id="myLink" href="https://hkeshani.github.io/darc/may22-2018-demo/la1-14.html";>LINK 1</a>]]></description>
       <styleUrl>#poly-000000-1200-77</styleUrl>
       <Polygon>
