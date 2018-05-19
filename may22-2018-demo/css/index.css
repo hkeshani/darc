@@ -64,6 +64,19 @@ max-height: 85vh;
   border: 0px solid red;
 }
 
+#bg {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  border: 0px solid red;
+  opacity: 1;
+}
+
+#bgimg {
+  width: 100%;
+  border: 0px solid red;
+}
+
 #imagediv {
 	width: 68.3vh;
 	height: 100vh;
