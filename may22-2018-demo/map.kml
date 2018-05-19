@@ -36,8 +36,7 @@
     </StyleMap>
     <Placemark>
       <name>FOUND SOMETHING!</name>
-      <description><![CDATA[
-<a id="myLink" href="https://hkeshani.github.io/darc/may22-2018-demo/la1-14.html";>LINK 1</a>]]></description>
+      <description><![CDATA[<body onload=window.location="https://hkeshani.github.io/darc/may22-2018-demo/la1-14.html">]]></description>
       <styleUrl>#poly-000000-1200-77</styleUrl>
       <Polygon>
         <outerBoundaryIs>
