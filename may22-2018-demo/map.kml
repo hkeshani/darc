@@ -37,7 +37,7 @@
     <Placemark>
       <name>FOUND SOMETHING!</name>
       <description><![CDATA[<body onload="document.getElementById('myLink').click()">
-<a id="myLink" href="https://hkeshani.github.io/darc/may22-2018-demo/la1-14.html";>LINK 1</a></body>]]>
+<a id="myLink" onclick="https://hkeshani.github.io/darc/may22-2018-demo/la1-14.html";>LINK 1</a></body>]]>
 </description>
       <styleUrl>#poly-000000-1200-77</styleUrl>
       <Polygon>
