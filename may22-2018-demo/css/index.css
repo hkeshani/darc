@@ -15,6 +15,10 @@ body {
   background-color: white;
 }
 
+.disable-select {
+  user-select: none;
+}
+
 #master {
   position: relative;
   width: 100%;
@@ -83,6 +87,7 @@ max-height: 85vh;
   border: 0px solid purple;
   z-index: 1;
   opacity: 1;
+  
 }
 
 #path5 {
@@ -101,7 +106,7 @@ max-height: 85vh;
   height: 2.5em;
   transform-origin: 50% 50%;
   border: 0px solid green;
- 
+  user-select: none;
 }
 
 .m:hover { opacity: .3; }
