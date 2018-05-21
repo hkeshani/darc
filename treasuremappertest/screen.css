@@ -1,0 +1,33 @@
+body{
+	width:100%; 
+	margin:0;
+	padding:0; 
+	font-family: helvetica, arial, sans-serif;
+	}
+	
+#logocontainer{
+	padding: 15px 10px 10px 10px; 
+	border-bottom:1px solid #ddd; 
+	width:100%;
+	}
+	
+#displayName{
+	padding: 5px; 
+	color: #f06; 
+	background-color: #eee; 
+	width: 100%; 
+	font-weight: bold;
+	}
+	
+#displayDescription{
+	padding: 10px;
+	}
+
+
+#counter, 
+#currentpos, 
+#debugoutput{
+	display:none;
+	}
+
+
