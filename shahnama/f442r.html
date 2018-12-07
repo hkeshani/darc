@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Reunion of Shirin and Khusraw</title>
+    <link rel="stylesheet" href="css/multimedia.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Work+Sans|PT+Sans+Narrow" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<!--makes invisible to search engines
+    <meta name="robots" content="noindex," />
+-->	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  </head>
+  <body>
+  <script src="js/NoSleep.min.js"></script>
+  <div id="div1" class="outer">
+    <div class="inner">
+      <img id="picture1" src="assets/images/f442r_big.jpg" alt="picture1"/>
+    </div>
+  </div>
+  <!-- for multiple images-->
+<!--   <div id="div2" class="outer" style="transform: translateY(-100%);">
+    <div class="inner">
+      <img id="picture2" src="assets/images/la1-1_big.jpg" alt="picture2" style="opacity:0;" />
+    </div>
+  </div> -->
+  <!---->
+
+  <!-- overlay -->
+  <!-- SUBTITLES DIV -->
+  <section id="subtitleswindow">
+    <div>
+      <div>test1</div>
+      <div>asdf2</div>
+    </div>
+  </section>
+  <!-- buttons -->
+
+   <div id="morebuttons">
+<!-- 	<button id="replaybutton" class="button-style">
+        <i class="material-icons">replay</i>
+	</button> -->
+       
+      <!--<button id="btn2" class="bcss"><i class="material-icons">fast_forward</i></button>-->
+       
+      <button id="rewind5" class="button-style">
+        <i class="material-icons">replay_5</i>
+      </button>
+	  <button id="time" class="button-style2">00:00</button> 
+      <button id="forward5" class="button-style">
+        <i class="material-icons">forward_5</i>
+      </button> 
+
+  </div>
+<div id="mediabuttonsdiv">
+   <span id="closespan" class="closespan" style="opacity:1">
+	  <button id="closebutton" class="button-style-close" onclick="restart(); back2()">
+        <i id="closeb" class="material-icons">close</i>
+      </button>
+  </span>
+  
+  <div id="mediabuttons">
+   <!-- <span id="closespan" class="closespan"> -->
+	  <!-- <button id="closebutton" class="button-style-close" onclick="restart(); back2()"> -->
+        <!-- <i id="closeb" class="material-icons">close</i> -->
+      <!-- </button> -->
+  <!-- </span> -->
+  
+  <span id="hidemediaspan">
+	  <button id="hidemediabutton" class="button-style">
+        <i id="icon" class="material-icons hidemedia-right">expand_more</i>
+      </button>
+  </span>	  
+  <span id="mainbuttons">
+
+
+      <button id="playpause" class="button-style">
+        <i class="material-icons">play_circle_filled</i>
+      </button>
+	  <button id="replaybutton" class="button-style">
+        <i class="material-icons">replay</i>
+	</button>	
+      <button id="subtitlestoggle" class="button-style">
+        <i class="material-icons">closed_caption</i>
+      </button>
+	  
+    <button id="togglemorebuttons" class="button-style"><i class="material-icons">more_horiz</i></button>
+
+ 
+	  
+  </span>  
+  
+  </div> 
+</div>
+ 
+  <div id="startscreen" class="tint">
+  <!-- <div id="closespantp"> -->
+	  <!-- <button id="closebuttontp" onclick="back2()"> -->
+        <!-- <i id="closebtp" class="material-icons">close</i> -->
+      <!-- </button> -->
+  <!-- </div>  -->
+<div class="container">
+
+  <div class="block">
+
+      <button class="start" id="start-tp">START
+	    </button> 
+  
+    <div id="title">Reunion of Shirin and Khusraw</div>
+    <div id="place-date">Shiraz, then Isfahan, 1604</div>
+    <div id="timelength">(5:00 min.)</div>
+
+ 
+</div>
+
+<div class="block">
+    <a href="#openModal2" id="credits">CREDITS</a>
+    <div id="openModal2" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close"><i class="material-icons">close</i></a>
+		<p class="modaltitleprefix">CREDITS</p>
+		<p class="modaltitle">Work(s) Featured</p>
+        <div class="detailsblurb2">Shirin Greets Khusrau Parviz Returning from the Hunt, Shanamah. Shiraz, then Isfahan, 1604, Bibliotheque Nationale de France, Suppl. persan 490.</div>
+        <p class="modaltitle">Cite This Multimedia Work</p>
+        <div class="detailsblurb2">Frank, Xu (Researcher, Scriptwriter, Voiceover, Storyboarder, Audio Editor, Image Editor,
+        Animator, Coder). “Multimedia: The Reunion of Shirin and Khusraw.” 
+        <em>Islamic Art Multimedia Project</em>, December 3, 2018. <span id="url3"></span>.
+        <p id="copyright">
+        <b>creative commons</b> - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) 
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Summary</a> 
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">Legal</a></p></div>
+        <p class="modaltitle">Multimedia Sources</p>
+        <div class="detailsblurb2">IMAGES<ul>
+		<li>Shirin Greets Khusrau Parviz Returning from the Hunt. Shiraz, then Isfahan, 1604, Bibliotheque Nationale de France, Suppl. persan 490.</li>
+
+</ul>
+SOUND
+<ul>
+<li>Halsey. "Bad At Love." 2017, MP3. </li>
+<li>SmarTune Music. The Middle East. SmarTune Music, 2017. https://www.melodyloops.com/search/the middle east/. </li>
+</ul>
+TEXTS
+<ul>
+<li>Taylor, Alice, and John Walsh. Book Arts of Isfahan: Diversity and Identity in Seventeenth-Century Persia. Malibu, California: J. Paul Getty Museum, 1996. Accessed October 20, 2018. https://books.google.ca/books?id=Gh02AgAAQBAJ&printsec=frontcover&redir_esc=y#v=snippet&q=khosrou&f=false. 
+</li>
+<li>Amiri, M. "Adaptation of Theatrical Elements of Nezami Ganjawi: A Case Study on the Ballad of Khosrow and Shirin." Journal of Fundamental and Applied Sciences 8, no. 3 (2016): 833. Accessed October 23, 2018. doi:10.4314/jfas.v8i3s.265. 
+</li>
+</ul>
+		</div>
+      </div>
+    </div>
+
+
+	
+    <a href="#openModal5" >
+
+      <i class="material-icons" id="share">share</i>
+    </a>
+    <div id="openModal5" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close"><i class="material-icons">close</i></a>
+
+        <p class="modaltitleprefix">SHARE</p>
+        <div id="sm" class="detailsblurb2">
+          <span>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
+            <img id="fb" src="assets/images/FB-f-Logo__white_100.png" />
+          </a> 
+          <a href="mailto:?Subject=The%20Aga%20Khan%20Garden" target="_top">
+            <img id="gm" src="assets/images/ic_mail_outline_white_48dp_2x.png" alt="gm"/>
+          </a> 
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false"
+          target="_blank">
+            <img id="tw" src="assets/images/Twitter_Logo_WhiteOnImage.png" alt="tw"/>
+          </a>
+          <br />
+          <br />Copy and share the following link on your favourite social media platform.
+          <br /></span>
+          <p id="url"></p>
+          <p>
+            <span>You can also use the menu in your browser to share.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+	
+</div>
+
+</div>
+
+</div>
+ 
+  <!-- buttons NOTE USE FULL LINK TO RELOAD LA1 AND RESUME GELOCATION FUNCTIONS-->
+<!--  <button id="backbutton" class="button-style" onclick="myFunction()">
+    <i class="material-icons">close</i>
+  </button>  -->
+
+
+
+  <audio id="audio1">
+  <source src="assets/audio/la1-1.mp3" type="audio/mp3" />
+  <track label="English subtitles" kind="subtitles" srclang="en" src="assets/audio/la1-1.vtt" default="" />Your browser does not
+  support the video tag</audio> 
+  <!--
+<script src="js/greensock-js/src/minified/TweenMax.min.js">
+</script>
+-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script> 
+  <script src="js/multimedia.js"></script> 
+  <script>
+var pic1 = document.getElementById("picture1");
+<!-- var pic2 = document.getElementById("picture2"); -->
+
+var tl = new TimelineMax({paused:true,onUpdate:updatetime,onComplete:restart});
+
+tl.timeScale(1);
+
+
+//SET POSITION - 0S
+
+tl.to("#startscreen, #subtitleswindow", 0.5, {opacity: 0}, "+=0.5")
+.set ("#mediabuttons", {zIndex: 99})
+.to("#mediabuttons", 0.5, {opacity: 1})
+.call(enableNoSleep)
+
+.set ("#startscreen", {zIndex: -1})
+
+
+//1-ADD PAUSE 
+  .set({}, {}, "+=59.00")
+
+//2-ZOOM IN & PAN Right
+  .to(pic1, 17.19, {
+  scale: 2.70,
+  xPercent: -53,
+  yPercent: -7,
+  ease: Power1.easeInOut
+})
+
+//ADD PAUSE
+  .set({}, {}, "+=48.00")
+
+//3-PAN Left
+  .to(pic1, 16.36, {
+  scale: 1.99,
+  xPercent: 44,
+  yPercent: 20,
+  ease: Power1.easeInOut
+})
+
+//4-ADD PAUSE
+  .set({}, {}, "+=48.00")
+
+//5-Zoom in On Shirin
+  .to(pic1, 16.36, {
+  scale: 2.50,
+  xPercent: 44,
+  yPercent: 30,
+  ease: Power1.easeInOut
+})
+
+//ADD PAUSE
+  .set({}, {}, "+=55.00")
+
+  //6-ZOOM OUT
+  .to(pic1, 17.6, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+  ease: Power1.easeInOut
+})
+//ADD PAUSE
+  .set({}, {}, "+=32.00")
+//end sequence
+        .set ("#startscreen", {zIndex: 0})
+        .to("#startscreen", 0.5, {opacity: 1})
+        .call(disableNoSleep)
+</script></body>
+</html>
