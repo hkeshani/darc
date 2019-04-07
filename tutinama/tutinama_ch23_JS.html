@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <title>XXIII. Of a Brahmin falling in love with the King of Babylon's Daughter</title>
+    <link rel="stylesheet" href="css/multimedia.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Work+Sans|PT+Sans+Narrow" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<!--makes invisible to search engines
+    <meta name="robots" content="noindex," />
+-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  </head>
+  <body>
+  <script src="js/NoSleep.min.js"></script>
+  <div id="div1" class="outer">
+    <div class="inner">
+      <img id="picture1" src="assets/images/tutinama_ch5_CMA1962.279.37b-big_JS.jpg" alt="picture1"/>
+    </div>
+  </div>
+  <!-- for multiple images-->
+
+  <div id="div2" class="outer" style="transform: translateY(-100%);">
+    <div class="inner">
+      <img id="picture2" src="assets/images/tutinama_ch23_CMA1962-279-231b-big_JS.jpg" alt="picture2" style="opacity:0;" />
+    </div>
+  </div>
+
+  <div id="div3" class="outer" style="transform: translateY(-200%);">
+    <div class="inner">
+      <img id="picture3" src="assets/images/tutinama_ch23_CMA1962-279-232b-big_JS.jpg" alt="picture3" style="opacity:0;" />
+    </div>
+  </div>
+
+  <div id="div4" class="outer" style="transform: translateY(-300%);">
+    <div class="inner">
+      <img id="picture4" src="assets/images/tutinama_ch23_CMA1962.279.234a-big_JS.jpg" alt="picture4" style="opacity:0;" />
+    </div>
+  </div>
+
+  <div id="div5" class="outer" style="transform: translateY(-400%);">
+    <div class="inner">
+      <img id="picture5" src="assets/images/tutinama_ch23_CMA1962.279.236a-big_JS.jpg" alt="picture5" style="opacity:0;" />
+    </div>
+  </div>
+<!--
+  <div id="div4" class="outer" style="transform: translateY(-100%);">
+    <div class="inner">
+      <img id="picture4" src="assets/images/la1-1_big.jpg" alt="picture2" style="opacity:0;" />
+    </div>
+  </div>
+
+  <div id="div5" class="outer" style="transform: translateY(-100%);">
+    <div class="inner">
+      <img id="picture5" src="assets/images/la1-1_big.jpg" alt="picture2" style="opacity:0;" />
+    </div>
+  </div>
+  <div id="div6" class="outer" style="transform: translateY(-100%);">
+    <div class="inner">
+      <img id="picture6" src="assets/images/la1-1_big.jpg" alt="picture2" style="opacity:0;" />
+    </div>
+  </div>
+-->
+  <!-- overlay -->
+  <!-- SUBTITLES DIV -->
+  <section id="subtitleswindow">
+    <div>
+      <div>test1</div>
+      <div>asdf2</div>
+    </div>
+  </section>
+  <!-- buttons -->
+
+   <div id="morebuttons">
+<!-- 	<button id="replaybutton" class="button-style">
+        <i class="material-icons">replay</i>
+	</button> -->
+
+      <!--<button id="btn2" class="bcss"><i class="material-icons">fast_forward</i></button>-->
+
+      <button id="rewind5" class="button-style">
+        <i class="material-icons">replay_5</i>
+      </button>
+	  <button id="time" class="button-style2">00:00</button>
+      <button id="forward5" class="button-style">
+        <i class="material-icons">forward_5</i>
+      </button>
+
+  </div>
+<div id="mediabuttonsdiv">
+   <span id="closespan" class="closespan" style="opacity:1">
+	  <button id="closebutton" class="button-style-close" onclick="restart(); messageparent()">
+        <i id="closeb" class="material-icons">close</i>
+      </button>
+  </span>
+
+  <div id="mediabuttons">
+   <!-- <span id="closespan" class="closespan"> -->
+	  <!-- <button id="closebutton" class="button-style-close" onclick="restart(); messageparent()"> -->
+        <!-- <i id="closeb" class="material-icons">close</i> -->
+      <!-- </button> -->
+  <!-- </span> -->
+
+  <span id="hidemediaspan">
+	  <button id="hidemediabutton" class="button-style">
+        <i id="icon" class="material-icons hidemedia-right">expand_more</i>
+      </button>
+  </span>
+  <span id="mainbuttons">
+
+
+      <button id="playpause" class="button-style">
+        <i class="material-icons">play_circle_filled</i>
+      </button>
+	  <button id="replaybutton" class="button-style">
+        <i class="material-icons">replay</i>
+	</button>
+      <button id="subtitlestoggle" class="button-style">
+        <i class="material-icons">closed_caption</i>
+      </button>
+
+    <button id="togglemorebuttons" class="button-style"><i class="material-icons">more_horiz</i></button>
+
+
+
+  </span>
+
+  </div>
+</div>
+
+  <div id="startscreen" class="tint">
+  <!-- <div id="closespantp"> -->
+	  <!-- <button id="closebuttontp" onclick="messageparent()"> -->
+        <!-- <i id="closebtp" class="material-icons">close</i> -->
+      <!-- </button> -->
+  <!-- </div>  -->
+<div class="container">
+
+  <div class="block">
+
+      <button class="start" id="start-tp">START
+	    </button>
+
+    <div id="title">XXIII. Of a Brahmin falling in love with the King of Babylon's Daughter</div>
+    <div id="place-date">Tutinama</div>
+    <div id="timelength">(4:44 min.)</div>
+
+
+</div>
+
+<div class="block">
+    <a href="#openModal2" id="credits">CREDITS</a>
+    <div id="openModal2" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close"><i class="material-icons">close</i></a>
+		<p class="modaltitleprefix">CREDITS</p>
+		<p class="modaltitle">Work(s) Featured</p>
+
+        <div class="detailsblurb2">Unknown. <em>Page from Tales of a Parrot (Tuti-nama): Sixth night: The parrot addresses Khujasta at the beginning of the sixth night</em>. India, c. 1560.
+          Manuscript folio. Opaque watercolor, gold and ink on paper. Page: 19.9 x 14.2 cm (7 13/16 x 5 9/16 in.);
+          Painting: 12.9 x 10.5 cm (5 1/16 x 4 1/8 in.). Cleveland, Cleveland Museum of Art,
+          CMA 1962.279.37.b (Gift of Mrs. A. Dean Perry)</div>
+
+        <div class="detailsblurb2">Unknown. <em>Page from Tales of a Parrot (Tuti-nama): Thirty-fifth night: The Brahman gives an account of his falling in love with the king of Babylon’s daughter to his friend, the magician</em>. India, c. 1560.
+          Manuscript folio. Opaque watercolor, gold and ink on paper. Page: 19.9 x 14.2 cm (7 13/16 x 5 9/16 in.);
+          Painting: 12.9 x 10.5 cm (5 1/16 x 4 1/8 in.). Cleveland, Cleveland Museum of Art,
+          CMA 1962.279.231.b (Gift of Mrs. A. Dean Perry)</div>		  
+
+        <div class="detailsblurb2">Unknown. <em>Page from Tales of a Parrot (Tuti-nama): Thirty-fifth night: The magician, disguised as a Brahman, visits the king of Babylon</em>. India, c. 1560.
+          Manuscript folio. Opaque watercolor, gold and ink on paper. Page: 19.9 x 14.2 cm (7 13/16 x 5 9/16 in.);
+          Painting: 12.9 x 10.5 cm (5 1/16 x 4 1/8 in.). Cleveland, Cleveland Museum of Art,
+          CMA 1962.279.232.b (Gift of Mrs. A. Dean Perry)</div>			  
+
+        <div class="detailsblurb2">Unknown. <em>Page from Tales of a Parrot (Tuti-nama): Thirty-fifth night: The son of the king of Babylon sees the Brahman transformed into a woman bathing and falls in love with her</em>. India, c. 1560.
+          Manuscript folio. Opaque watercolor, gold and ink on paper. Page: 19.9 x 14.2 cm (7 13/16 x 5 9/16 in.);
+          Painting: 12.9 x 10.5 cm (5 1/16 x 4 1/8 in.). Cleveland, Cleveland Museum of Art,
+          CMA 1962.279.234.a (Gift of Mrs. A. Dean Perry)</div>		  
+
+        <div class="detailsblurb2">Unknown. <em>Page from Tales of a Parrot (Tuti-nama): Thirty-fifth night: The magician disguised as a Brahman returns to claim his "daughter-in-law"</em>. India, c. 1560.
+          Manuscript folio. Opaque watercolor, gold and ink on paper. Page: 19.9 x 14.2 cm (7 13/16 x 5 9/16 in.);
+          Painting: 12.9 x 10.5 cm (5 1/16 x 4 1/8 in.). Cleveland, Cleveland Museum of Art,
+          CMA 1962.279.236.a (Gift of Mrs. A. Dean Perry)</div>		  
+		  
+        <p class="modaltitle">Cite This Multimedia Work</p>
+        <div class="detailsblurb2">Sedmak, Jennica (Researcher, Scriptwriter, Voiceover, Storyboarder, Audio Editor, Image Editor,
+        Animator, Coder). “Multimedia: XXIII. Of a Brahmin falling in love with the King of Babylon's Daughter.”
+        <em>The Tutinama: A Digital Art History Student Project</em>, March 31, 2019. <span id="url3"></span>.
+        <p id="copyright">
+        <b>creative commons</b> - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Summary</a>
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">Legal</a></p></div>
+        <p class="modaltitle">Multimedia Sources</p>
+        <div class="detailsblurb2">IMAGES<ul>
+
+
+<li>Cleveland Museum Staff, <em>1962.279.37.b_print.jpg [Digital Image of Page from Tales of a Parrot (Tuti-nama): Sixth night: The parrot addresses Khujasta at the beginning of the sixth night]</em>. Cleveland, c. 1560. Digital Image. JPEG quality: 100, subsampling ON (2x2). 2223 x 3400 Pixels, 6.8 MB, 16.7 Million Colours (24 BitsPerPixel). Cleveland Museum of Art website, http://www.clevelandart.org/art/1962.279.37.b.</li>
+
+<li>Cleveland Museum Staff, <em>1962.279.231.b_print.jpg [Digital Image of Page from Tales of a Parrot (Tuti-nama): Thirty-fifth night: The Brahman gives an account of his falling in love with the king of Babylon’s daughter to his friend, the magician]</em>. Cleveland, c. 1560. Digital Image. JPEG quality: 100, subsampling ON (2x2). 2240 x 3400 Pixels, 7.1 MB, 16.7 Million Colours (24 BitsPerPixel). Cleveland Museum of Art website, http://www.clevelandart.org/art/1962.279.231.b.</li></
+
+<li>Cleveland Museum Staff, <em>1962.279.232.b_print.jpg [Digital Image of Page from Tales of a Parrot (Tuti-nama): Thirty-fifth night: The magician, disguised as a Brahman, visits the king of Babylon]</em>. Cleveland, c. 1560. Digital Image. JPEG quality: 100, subsampling ON (2x2). 2250 x 3400 Pixels, 2 MB, 16.7 Million Colours (24 BitsPerPixel). Cleveland Museum of Art website, http://www.clevelandart.org/art/1962.279.232.b.</li>
+
+<li>Cleveland Museum Staff, <em>1962.279.234.a_print.jpg [Digital Image of Page from Tales of a Parrot (Tuti-nama): Thirty-fifth night: The son of the king of Babylon sees the Brahman transformed into a woman bathing and falls in love with her]</em>. Cleveland, c. 1560. Digital Image. JPEG quality: 100, subsampling ON (2x2). 2257 x 3400 Pixels, 7.3 MB, 16.7 Million Colours (24 BitsPerPixel). Cleveland Museum of Art website, http://www.clevelandart.org/art/1962.279.234.a.</li>
+
+<li>Cleveland Museum Staff, <em>1962.279.236.a_print.jpg [Digital Image of Page from Tales of a Parrot (Tuti-nama): Thirty-fifth night: The magician disguised as a Brahman returns to claim his "daughter-in-law"]</em>. Cleveland, c. 1560. Digital Image. JPEG quality: 100, subsampling ON (2x2). 2212 x 3400 Pixels, 6.9 MB, 16.7 Million Colours (24 BitsPerPixel). Cleveland Museum of Art website, http://www.clevelandart.org/art/1962.279.236.a.</li>
+
+</ul>
+SOUND
+<ul>
+
+<li>Dang, Ami. <em>Treasure</em>. Mp3. Vol. Hukam. Baltimore: Ehse Records, 2011. https://freemusicarchive.org/music/Ami_Dang/Hukam/</li>
+
+<li>Hirvonen, Jani. <em>Birds And Village Sounds and Rain In Pokhara</em>. Mp3. Vol. Field Recordings From India & Nepal. Finland: Om Ha Sva Ha Ksha Ma La Va Ra Yam Records, 2007. http://freemusicarchive.org/music/Jani_Hirvonen/Field_Recordings_From_India__Nepal/2-12_Birds_And_Village_Sounds__Rain_In_Pokhara</li>
+
+<li>Kinhal, Veena. <em>Haratanaya Sree</em>. Mp3. Vol. Tribute to Veena Raja Rao. 2009. http://freemusicarchive.org/music/Veena_Kinhal/Tribute_to_Veena_Raja_Rao/Haratanaya_Sree</li>
+
+<li>Vinod, Prasanna. <em> Raag (Youtube)</em> Mp3. Vol. s/t. Australia: Brother Sister Records, 2013. http://freemusicarchive.org/music/Vinod_Prasanna__Okey_Szoke__Pompey/Vinod_Prasanna__Okey_Szoke__Pompey/03_Big_Drum</li>
+
+</ul>
+TEXTS
+<ul>
+
+<li>Mahalingam,  Ramaswami. "Essentialism, Culture, and Power: Representations of Social Class." <i>Journal of Social Issues,</i> vol. 59, no. 4, 2003, pp. 733-749. </li>
+
+<li> Muḥammad Qādirī (17th C). “I. Of the Birth of Mieraun; and of Khojisteh Falling in Love.” In <em>The Tooti Nameh, or Tales of a Parrot: In the Persian Language, with an English Translation</em>, translated by Francis Gladwin, 117-121. Calcutta; London, 1801. https://archive.org/details/tutinamahtootina00lond/page/n227.</li>
+
+<li>Winternitz, M. "Hindu Castes and Sects: An Exposition of the Origin of the Hindu Caste System and the Bearing of the Sects Towards each Other and Towards Other Religious Systems."
+  <i>Nature,</i> vol. 56, no. 1459, 1897, pp. 561-563.</li>
+
+</ul>
+		</div>
+      </div>
+    </div>
+
+
+
+    <a href="#openModal5" >
+
+      <i class="material-icons" id="share">share</i>
+    </a>
+    <div id="openModal5" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close"><i class="material-icons">close</i></a>
+
+        <p class="modaltitleprefix">SHARE</p>
+        <div id="sm" class="detailsblurb2">
+          <span>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
+            <img id="fb" src="assets/images/FB-f-Logo__white_100.png" />
+          </a>
+          <a href="mailto:?Subject=The%20Aga%20Khan%20Garden" target="_top">
+            <img id="gm" src="assets/images/ic_mail_outline_white_48dp_2x.png" alt="gm"/>
+          </a>
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false"
+          target="_blank">
+            <img id="tw" src="assets/images/Twitter_Logo_WhiteOnImage.png" alt="tw"/>
+          </a>
+          <br />
+          <br />Copy and share the following link on your favourite social media platform.
+          <br /></span>
+          <p id="url"></p>
+          <p>
+            <span>You can also use the menu in your browser to share.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+  <!-- buttons NOTE USE FULL LINK TO RELOAD LA1 AND RESUME GELOCATION FUNCTIONS-->
+<!--  <button id="backbutton" class="button-style" onclick="myFunction()">
+    <i class="material-icons">close</i>
+  </button>  -->
+
+
+
+  <audio id="audio1">
+  <source src="assets/audio/tutinama_ch23_JS.mp3" type="audio/mp3" />
+  <track label="English subtitles" kind="subtitles" srclang="en" src="assets/audio/tutinama_ch23_JS.vtt" default="" />Your browser does not
+  support the video tag</audio>
+  <!--
+<script src="js/greensock-js/src/minified/TweenMax.min.js">
+</script>
+-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+  <script src="js/multimedia.js"></script>
+  <script>
+var pic1 = document.getElementById("picture1");
+var pic2 = document.getElementById("picture2");
+var pic3 = document.getElementById("picture3");
+var pic4 = document.getElementById("picture4");
+var pic5 = document.getElementById("picture5");
+
+
+var tl = new TimelineMax({paused:true,onUpdate:updatetime,onComplete:restart});
+
+tl.timeScale(1);
+
+
+//SET POSITION - 0S
+
+tl.to("#startscreen, #subtitleswindow", 0.5, {opacity: 0}, "+=0.5")
+.set ("#mediabuttons", {zIndex: 99})
+.to("#mediabuttons", 0.5, {opacity: 1})
+.call(enableNoSleep)
+
+.set ("#startscreen", {zIndex: -1})
+
+
+//1-ADD PAUSE
+  .set({}, {}, "+=6")
+
+//2-ZOOM IN
+  .to(pic1, 39, {
+  scale: 2.8,
+  xPercent: -10,
+  yPercent: -50,
+  ease: Power1.easeInOut
+})
+
+//ADD PAUSE
+  .set({}, {}, "+=15")
+
+
+  //3-CROSSFADE (TO PIC 2)
+    .set(pic2, {
+    scale: 1,
+    xPercent: 0,
+    yPercent: 0,
+    opacity:0,
+  })
+    .to(pic1, 1, {
+    scale: 1,
+    xPercent: 0,
+    yPercent: 0,
+    rotation: 0,
+    opacity:0,
+    ease: Sine.easeInOut
+  })
+    .to(pic2, 1, {
+    scale: 1,
+    xPercent: 0,
+    yPercent: 0,
+    opacity:1,
+    ease: Sine.easeInOut
+  },'-=1')
+
+  //ADD PAUSE
+    .set({}, {}, "+=13.0")
+
+//3-ZOOM IN
+  .to(pic2, 17, {
+  scale: 4.5,
+  xPercent: -80,
+  yPercent: -85,
+  ease: Power1.easeInOut
+})
+
+//4-ADD PAUSE
+  .set({}, {}, "+=11.0")
+
+//5-PAN LEFT
+    .to(pic2, 3, {
+    scale: 3.0,
+    xPercent: 80,
+    yPercent: -95,
+    ease: Power1.easeInOut
+  })
+
+  //4-ADD PAUSE
+    .set({}, {}, "+=6.0")
+
+  //3-CROSSFADE (TO PIC 3)
+    .set(pic3, {
+    scale: 1,
+    xPercent: 0,
+    yPercent: 0,
+    opacity:0,
+  })
+    .to(pic2, 1, {
+    scale: 1,
+    xPercent: 0,
+    yPercent: 0,
+    rotation: 0,
+    opacity:0,
+    ease: Sine.easeInOut
+  })
+    .to(pic3, 1, {
+    scale: 1,
+    xPercent: 0,
+    yPercent: 0,
+    opacity:1,
+    ease: Sine.easeInOut
+  },'-=1')
+
+  //4-ADD PAUSE
+    .set({}, {}, "+=11.0")
+
+
+//5-ZOOM IN
+  .to(pic3, 2, {
+  scale: 2.6,
+  xPercent: -90,
+  yPercent: -65,
+  ease: Power1.easeInOut
+})
+
+//4-ADD PAUSE
+  .set({}, {}, "+=6.0")
+
+  //5-PAN LEFT
+    .to(pic3, 5, {
+    scale: 2.8,
+    xPercent: 10,
+    yPercent: -20,
+    ease: Power1.easeInOut
+  })
+
+  //4-ADD PAUSE
+    .set({}, {}, "+=19.0")
+
+  //3-CROSSFADE (TO PIC 4)
+      .set(pic4, {
+      scale: 1,
+      xPercent: 0,
+      yPercent: 0,
+      opacity:0,
+    })
+      .to(pic3, 1, {
+      scale: 1,
+      xPercent: 0,
+      yPercent: 0,
+      rotation: 0,
+      opacity:0,
+      ease: Sine.easeInOut
+    })
+      .to(pic4, 1, {
+      scale: 1,
+      xPercent: 0,
+      yPercent: 0,
+      opacity:1,
+      ease: Sine.easeInOut
+    },'-=1')
+
+    //4-ADD PAUSE
+      .set({}, {}, "+=36.0")
+
+      //5-ZOOM IN
+        .to(pic4, 11, {
+        scale: 3,
+        xPercent: -90,
+        yPercent: 70,
+        ease: Power1.easeInOut
+      })
+
+      //4-ADD PAUSE
+        .set({}, {}, "+=7.0")
+
+      //5-PAN LEFT
+        .to(pic4, 6, {
+        scale: 2.5,
+        xPercent: 10,
+        yPercent: -40,
+        ease: Power1.easeInOut
+      })
+
+      //4-ADD PAUSE
+        .set({}, {}, "+=8.0")
+
+        //3-CROSSFADE (TO PIC 5)
+          .set(pic5, {
+          scale: 1,
+          xPercent: 0,
+          yPercent: 0,
+          opacity:0,
+        })
+          .to(pic4, 1, {
+          scale: 1,
+          xPercent: 0,
+          yPercent: 0,
+          rotation: 0,
+          opacity:0,
+          ease: Sine.easeInOut
+        })
+          .to(pic5, 1, {
+          scale: 1,
+          xPercent: 0,
+          yPercent: 0,
+          opacity:1,
+          ease: Sine.easeInOut
+        },'-=1')
+
+          //4-ADD PAUSE
+            .set({}, {}, "+=16.0")
+
+            //5-ZOOM IN
+              .to(pic5, 28, {
+              scale: 2,
+              xPercent: 20,
+              yPercent: 0,
+              ease: Power1.easeInOut
+            })
+
+            //5-PAN RIGHT
+              .to(pic5, 13.6, {
+              scale: 3.7,
+              xPercent: -80,
+              yPercent: -40,
+              ease: Power1.easeInOut
+            })
+
+            //1-FADE TO BLACK
+  .to(pic5, 15, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+  opacity: 0,
+  ease: Power1.easeInOut
+})
+
+
+
+
+//end sequence
+        .set ("#startscreen", {zIndex: 0})
+        .to("#startscreen", 0.5, {opacity: 1})
+        .call(disableNoSleep)
+</script></body>
+</html>

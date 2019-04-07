@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <title>VII. The Fowler, the Parrot, and her young ones</title>
+    <link rel="stylesheet" href="css/multimedia.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Work+Sans|PT+Sans+Narrow" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<!--makes invisible to search engines
+    <meta name="robots" content="noindex," />
+-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  </head>
+  <body>
+  <script src="js/NoSleep.min.js"></script>
+  <div id="div1" class="outer">
+    <div class="inner">
+      <img id="picture1" src="assets/images/tutinama_ch7_CMA1962-279-37b-big-FL.jpg" alt="picture1"/>
+    </div>
+  </div>
+  <!-- for multiple images-->
+
+  <div id="div2" class="outer" style="transform: translateY(-100%);">
+    <div class="inner">
+      <img id="picture2" src="assets/images/tutinama_ch7_CMA1962-279-35a-big-FL.jpg" alt="picture2" style="opacity:0;" />
+    </div>
+  </div>
+
+
+  <div id="div3" class="outer" style="transform: translateY(-200%);">
+    <div class="inner">
+      <img id="picture3" src="assets/images/tutinama_ch7_CMA1962-279-36b-big-FL.jpg" alt="picture3" style="opacity:0;"/>
+    </div>
+  </div>
+<!--
+  <div id="div4" class="outer" style="transform: translateY(-300%);">
+    <div class="inner">
+      <img id="picture4" src="assets/images/tutinama_ch18_CMA1962-279-169b-big_AM.jpg" alt="picture4" style="opacity:0;" />
+    </div>
+  </div>
+
+  <div id="div5" class="outer" style="transform: translateY(-400%);">
+    <div class="inner">
+      <img id="picture5" src="assets/images/tutinama_ch18_CMA1962-279-170b-big_AM.jpg" alt="picture5" style="opacity:0;" />
+    </div>
+  </div>
+
+
+  <div id="div6" class="outer" style="transform: translateY(-100%);">
+    <div class="inner">
+      <img id="picture6" src="assets/images/la1-1_big.jpg" alt="picture2" style="opacity:0;" />
+    </div>
+  </div>
+-->
+  <!-- overlay -->
+  <!-- SUBTITLES DIV -->
+  <section id="subtitleswindow">
+    <div>
+      <div>test1</div>
+      <div>asdf2</div>
+    </div>
+  </section>
+  <!-- buttons -->
+
+   <div id="morebuttons">
+<!-- 	<button id="replaybutton" class="button-style">
+        <i class="material-icons">replay</i>
+	</button> -->
+
+      <!--<button id="btn2" class="bcss"><i class="material-icons">fast_forward</i></button>-->
+
+      <button id="rewind5" class="button-style">
+        <i class="material-icons">replay_5</i>
+      </button>
+	  <button id="time" class="button-style2">00:00</button>
+      <button id="forward5" class="button-style">
+        <i class="material-icons">forward_5</i>
+      </button>
+
+  </div>
+<div id="mediabuttonsdiv">
+   <span id="closespan" class="closespan" style="opacity:1">
+	  <button id="closebutton" class="button-style-close" onclick="restart(); messageparent()">
+        <i id="closeb" class="material-icons">close</i>
+      </button>
+  </span>
+
+  <div id="mediabuttons">
+   <!-- <span id="closespan" class="closespan"> -->
+	  <!-- <button id="closebutton" class="button-style-close" onclick="restart(); messageparent()"> -->
+        <!-- <i id="closeb" class="material-icons">close</i> -->
+      <!-- </button> -->
+  <!-- </span> -->
+
+  <span id="hidemediaspan">
+	  <button id="hidemediabutton" class="button-style">
+        <i id="icon" class="material-icons hidemedia-right">expand_more</i>
+      </button>
+  </span>
+  <span id="mainbuttons">
+
+
+      <button id="playpause" class="button-style">
+        <i class="material-icons">play_circle_filled</i>
+      </button>
+	  <button id="replaybutton" class="button-style">
+        <i class="material-icons">replay</i>
+	</button>
+      <button id="subtitlestoggle" class="button-style">
+        <i class="material-icons">closed_caption</i>
+      </button>
+
+    <button id="togglemorebuttons" class="button-style"><i class="material-icons">more_horiz</i></button>
+
+
+
+  </span>
+
+  </div>
+</div>
+
+  <div id="startscreen" class="tint">
+  <!-- <div id="closespantp"> -->
+	  <!-- <button id="closebuttontp" onclick="messageparent()"> -->
+        <!-- <i id="closebtp" class="material-icons">close</i> -->
+      <!-- </button> -->
+  <!-- </div>  -->
+<div class="container">
+
+  <div class="block">
+
+      <button class="start" id="start-tp">START
+	    </button>
+
+      <div id="title">VII. The Fowler, the Parrot, and her young ones</div>
+      <div id="place-date">Tutinama</div>
+      <div id="timelength">(2:42 min.)</div>
+
+
+
+</div>
+
+<div class="block">
+    <a href="#openModal2" id="credits">CREDITS</a>
+    <div id="openModal2" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close"><i class="material-icons">close</i></a>
+		<p class="modaltitleprefix">CREDITS</p>
+		<p class="modaltitle">Work(s) Featured</p>
+
+       <div class="detailsblurb2">Unknown. <em>Page from Tales of a Parrot (Tuti-nama): Sixth night: The parrot addresses Khujasta at the beginning of the sixth night</em>
+        India, c. 1560. Manuscript folio. Opaque watercolor, ink and gold on paper.
+        Page: 20 x 14.4 cm (7 7/8 x 5 11/16 in.); Painting: 10.6 x 10.2 cm (4 3/16 x 4 in.).
+        Cleveland, Cleveland Museum of Art, CMA 1962.279.37.b (Gift of Mrs. A. Dean Perry) </div>		
+		
+        <div class="detailsblurb2">Basavana?. <em>Page from Tales of a Parrot (Tuti-nama):
+      Fifth night: The hunter throws away the baby parrots, who pretend to be dead, and captures the mother</em>
+      India, c. 1560. Manuscript folio. Opaque watercolor, ink and gold on paper.
+      Page: 20 x 14.3 cm (7 7/8 x 5 5/8 in.); Painting: 10.6 x 10.2 cm (4 3/16 x 4 in.)
+      Cleveland, Cleveland Museum of Art, CMA 1962.279.35.a (Gift of Mrs. A. Dean Perry) </div>
+
+
+        <div class="detailsblurb2">Basavana. <em>Page from Tales of a Parrot (Tuti-nama): Fifth night: The hunter offers the mother parrot to the king of Kamarupa</em>
+        India, c. 1560. Manuscript folio. Opaque watercolor, ink and gold on paper.
+        Page: 20 x 14.4 cm (7 7/8 x 5 11/16 in.); Painting: 10.2 x 10.7 cm (4 x 4 3/16 in.).
+        Cleveland, Cleveland Museum of Art, CMA 1962.279.36.b (Gift of Mrs. A. Dean Perry) </div>
+
+ 
+
+
+
+
+
+        <p class="modaltitle">Cite This Multimedia Work</p>
+        <div class="detailsblurb2">Luthra, Fioana (Researcher, Scriptwriter, Voiceover, Storyboarder, Audio Editor, Image Editor,
+        Animator, Coder), and Hussein Keshani (Researcher, Scriptwriter, Code Provider).
+         “Multimedia: VII. The Fowler, the Parrot, and her young ones”
+        <em>The Tutinama: A Digital Art history Student Project</em>, April 1, 2019.
+
+
+        <span id="url3"></span>.
+        <p id="copyright">
+        <b>creative commons</b> - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Summary</a>
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">Legal</a></p></div>
+        <p class="modaltitle">Multimedia Sources</p>
+        <div class="detailsblurb2">IMAGES<ul>
+
+		<li>Cleveland Museum Staff, <em>1962.279.37.b_print.jpg
+      [Digital Image of Page from Tales of a Parrot (Tuti-nama): Sixth night: The parrot addresses Khujasta at the beginning of the sixth night]</em>.
+      Cleveland, c. 2010. Digital Image. JPEG quality: 100, subsampling ON (2x2).
+      2226 x 3400 Pixels, 6.29 MB, 16.7 Million Colours (24 BitsPerPixel).
+      Cleveland Museum of Art website, http://www.clevelandart.org/art/1962.279.37.b.</li>		
+		
+		<li>Cleveland Museum Staff, <em>1962.279.35.a_print.jpg
+      [Digital Image of Page from Tales of a Parrot (Tuti-nama): Fifth night:The hunter throws away the baby parrots, who pretend to be dead, and captures the mother]</em>.
+      Cleveland, c. 2010. Digital Image. JPEG quality: 100, subsampling ON (2x2).
+      2226 x 3400 Pixels, 6.29 MB, 16.7 Million Colours (24 BitsPerPixel).
+      Cleveland Museum of Art website, http://www.clevelandart.org/art/1962.279.36.b.</li>		
+
+		<li>Cleveland Museum Staff, <em>1962.279.36.b_print.jpg
+      [Digital Image of Page from Tales of a Parrot (Tuti-nama): Fifth night: The hunter offers the mother parrot to the king of Kamarupa]</em>.
+      Cleveland, c. 2010. Digital Image. JPEG quality: 100, subsampling ON (2x2).
+      2226 x 3400 Pixels, 6.29 MB, 16.7 Million Colours (24 BitsPerPixel).
+      Cleveland Museum of Art website, http://www.clevelandart.org/art/1962.279.36.b.</li>
+	  
+</ul>
+SOUND
+<ul>
+<li>Istanbul Trio. Ertugrul Erkisi . Mp3. Vol. Istanbul Trio. Istanbul: Golden Festival, 2018. freemusicarchive.org. http://freemusicarchive.org/music/Istanbul_Trio/
+</ul>
+TEXTS
+<ul>
+<li>Muḥammad Qādirī (17th C). VII. The Fowler, the Parrot, and her young ones” In
+  <em>The Tooti Nameh, or Tales of a Parrot: In the Persian Language, with an English Translation</em>,
+  translated by Francis Gladwin, 58-61 (esp. 58-60). Calcutta; London, 1801. https://archive.org/details/tutinamahtootina00lond/page/n109.</li>
+</ul>
+		</div>
+      </div>
+    </div>
+
+
+
+    <a href="#openModal5" >
+
+      <i class="material-icons" id="share">share</i>
+    </a>
+    <div id="openModal5" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close"><i class="material-icons">close</i></a>
+
+        <p class="modaltitleprefix">SHARE</p>
+        <div id="sm" class="detailsblurb2">
+          <span>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
+            <img id="fb" src="assets/images/FB-f-Logo__white_100.png" />
+          </a>
+          <a href="mailto:?Subject=The%20Aga%20Khan%20Garden" target="_top">
+            <img id="gm" src="assets/images/ic_mail_outline_white_48dp_2x.png" alt="gm"/>
+          </a>
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false"
+          target="_blank">
+            <img id="tw" src="assets/images/Twitter_Logo_WhiteOnImage.png" alt="tw"/>
+          </a>
+          <br />
+          <br />Copy and share the following link on your favourite social media platform.
+          <br /></span>
+          <p id="url"></p>
+          <p>
+            <span>You can also use the menu in your browser to share.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+  <!-- buttons NOTE USE FULL LINK TO RELOAD LA1 AND RESUME GELOCATION FUNCTIONS-->
+<!--  <button id="backbutton" class="button-style" onclick="myFunction()">
+    <i class="material-icons">close</i>
+  </button>  -->
+
+
+
+  <audio id="audio1">
+  <source src="assets/audio/tutinama_ch7_FL.mp3" type="audio/mp3" />
+  <track label="English subtitles" kind="subtitles" srclang="en" src="assets/audio/tutinama_ch7_FL.vtt" default="" />Your browser does not
+  support the video tag</audio>
+
+  <!--
+<script src="js/greensock-js/src/minified/TweenMax.min.js">
+</script>
+-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+  <script src="js/multimedia.js"></script>
+  <script>
+var pic1 = document.getElementById("picture1");
+var pic2 = document.getElementById("picture2");
+var pic3 = document.getElementById("picture3");
+<!-- var pic4 = document.getElementById("picture4"); -->
+<!-- var pic5 = document.getElementById("picture5"); -->
+<!-- var pic6 = document.getElementById("picture6"); -->
+
+var tl = new TimelineMax({paused:true,onUpdate:updatetime,onComplete:restart});
+
+tl.timeScale(1);
+
+
+//SET POSITION - 0S
+
+tl.to("#startscreen, #subtitleswindow", 0.5, {opacity: 0}, "+=0.5")
+.set ("#mediabuttons", {zIndex: 99})
+.to("#mediabuttons", 0.5, {opacity: 1})
+.call(enableNoSleep)
+
+.set ("#startscreen", {zIndex: -1})
+
+
+//1-ADD PAUSE
+  .set({}, {}, "+=10.45")
+
+//2-ZOOM IN & PAN LEFT
+  .to(pic1, 17.19, {
+  scale: 1.99,
+  xPercent: 0,
+  yPercent: -50,
+  ease: Power1.easeInOut
+})
+
+//
+
+//4-ADD PAUSE
+  .set({}, {}, "+=10.67")
+
+//5-ZOOM OUT
+  .to(pic1, 7.6, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+  ease: Power1.easeInOut
+})
+
+
+//CROSSFADE (TO Picture 2)
+  .set(pic2, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+  opacity:0,
+})
+  .to(pic1, 1, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+  rotation: 0,
+  opacity:0,
+  ease: Sine.easeInOut
+})
+  .to(pic2, 1, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+  opacity:1,
+  ease: Sine.easeInOut
+},'-=1')
+
+//4-ADD PAUSE
+  .set({}, {}, "+=10.67")
+
+  //2-ZOOM IN & PAN LEFT
+    .to(pic2, 10.19, {
+    scale: 1.5,
+    xPercent: 0,
+    yPercent: 18,
+    ease: Power1.easeInOut
+  })
+
+  //4-ADD PAUSE
+    .set({}, {}, "+=1.67")
+
+    //2-ZOOM IN & PAN LEFT
+      .to(pic2, 7.19, {
+      scale: 1.99,
+      xPercent: 25,
+      yPercent: 37,
+      ease: Power1.easeInOut
+    })
+
+    //4-ADD PAUSE
+      .set({}, {}, "+=10.67")
+
+      //2-ZOOM IN & PAN LEFT
+        .to(pic2, 20.19, {
+        scale: 1.99,
+        xPercent: 25,
+        yPercent: 10,
+        ease: Power1.easeInOut
+      })
+  //CROSSFADE (TO Picture 3)
+    .set(pic3, {
+    scale: 1,
+    xPercent: 0,
+    yPercent: 20,
+    opacity:0,
+  })
+    .to(pic2, 1, {
+    scale: 1,
+    xPercent: 0,
+    yPercent: 0,
+    rotation: 0,
+    opacity:0,
+    ease: Sine.easeInOut
+  })
+    .to(pic3, 1, {
+    scale: 1,
+    xPercent: 0,
+    yPercent: 0,
+    opacity:1,
+    ease: Sine.easeInOut
+  },'-=1')
+
+  //4-ADD PAUSE
+    .set({}, {}, "+=10.67")
+
+    //2-ZOOM IN & PAN LEFT
+      .to(pic3, 13.19, {
+      scale: 1.99,
+      xPercent: -4,
+      yPercent: 30,
+      ease: Power1.easeInOut
+    })
+
+    //4-ADD PAUSE
+      .set({}, {}, "+=10.67")
+
+      //2-ZOOM IN & PAN LEFT
+        .to(pic3, 34.19, {
+        scale: 2.65,
+        xPercent: -4,
+        yPercent: 32,
+        ease: Power1.easeInOut
+      })
+
+
+//end sequence
+        .set ("#startscreen", {zIndex: 0})
+        .to("#startscreen", 0.5, {opacity: 1})
+        .call(disableNoSleep)
+</script></body>
+</html>

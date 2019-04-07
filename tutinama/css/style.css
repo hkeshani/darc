@@ -1,0 +1,181 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+
+/*HEADER STYLES*/
+
+.banner {
+	width: 100vw;
+	border: 0px solid red;
+	margin: 0;
+	padding: 0 0 1em 0;
+}
+
+#banner {
+	width: 100%
+	
+}
+
+figure { 
+  display: block; 
+  position: relative; 
+  overflow: hidden;
+   font: 1em/1 Verdana, Helvetica, sans-serif;
+  
+}
+
+figcaption { 
+  position: absolute; 
+  background: rgba(0,0,0,1); 
+  color: white; 
+  padding: 10px 20px; 
+  opacity: 0;
+  bottom: 0; 
+  right: 0;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition:    all 0.6s ease;
+  -o-transition:      all 0.6s ease;
+}
+
+
+
+
+.cap-left figcaption { bottom: 0; left: 0; }
+.cap-left:hover figcaption { left: 0; }
+.cap-left:before {  bottom: 10px; left: 10px; }
+
+figure:before { 
+  content: "i"; 
+  position: absolute; 
+  background: rgba(255,255,255,0.75); 
+  color: black;
+  width: 24px;
+  height: 24px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius:    12px;
+  border-radius:         12px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  /* Only Fx 4 supporting transitions on psuedo elements so far... */
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  opacity: 0.75;	
+}
+
+
+figcaption:hover {
+  opacity: 1;
+  left: 0;
+}
+
+
+.header {
+	width: 100vw;
+	margin: 0;
+	border: 0px solid purple;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	padding-top: 2vw;
+	padding-bottom: 3vw;
+}
+
+.header h1 {
+	font:3.7em 'Yanone Kaffeesatz', sans-serif;
+	text-transform: uppercase;
+}
+
+.bold  h1{
+		font-weight: 700;
+
+}
+
+.header h1 + p, details {
+	color: #797478;
+	font: 1.6em/1.5 Verdana, Helvetica, sans-serif;
+	padding-top: 1em;
+}
+
+details h3 {
+	padding-top: 1em;
+}
+
+/*CONTAINER STYLES*/
+
+ul {
+		padding-left: 5vw;
+	padding-right: 5vw;
+}
+
+.listing {
+  width:100vw;
+  padding-top: 1em;
+  list-style: none;
+  margin: 0;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
+  	border: 0px solid red;
+}
+.listing li {
+  display: flex;
+  flex-direction: column;
+}
+
+.shell {
+	  position: relative;
+	  overflow: hidden;
+  	border: 0px solid red;
+	padding: 0;
+
+}
+
+.shell:after {
+  position: absolute;
+  top: 10%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  content: "play_circle_outline";
+font-family: "Material Icons";
+  font-size: 5em;
+  color: #fff;
+  opacity: .5;
+}
+
+
+.shell img { 
+  width: 100%; 
+  height: auto;
+  	border: 0px solid blue;
+	    opacity: 1;		
+}
+.shell:hover {
+opacity: .8;
+}
+
+.galleryItem h3 {
+	color: #797478;
+	font: 1.4em/1.2 Verdana, Helvetica, sans-serif;
+	padding-top: 0.5em;
+	padding-left: .7em;
+	padding-right: .7em;
+	border: 0px solid green;
+
+}
+h4 {
+	padding-left: .7em;
+	padding-right: .7em;
+	color: #797478;
+	font: 1.1em/1.5 Verdana, Helvetica, sans-serif;
+	padding-top: 1em;	
+	padding-bottom: 1.5em;
+}

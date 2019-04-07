@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <title>X. The Merchant's Daughter and the Jackal</title>
+    <link rel="stylesheet" href="css/multimedia.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Work+Sans|PT+Sans+Narrow" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<!--makes invisible to search engines
+    <meta name="robots" content="noindex," />
+-->	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  </head>
+  <body>
+  <script src="js/NoSleep.min.js"></script>
+  <div id="div1" class="outer">
+    <div class="inner">
+      <img id="picture1" src="assets/images/tutinama_ch10_CMA1962-279-119b-big_SNM.jpg" alt="picture1"/>
+    </div>
+  </div>
+  <!-- for multiple images-->
+
+  <div id="div2" class="outer" style="transform: translateY(-100%);">
+    <div class="inner">
+      <img id="picture2" src="assets/images/tutinama_ch10_CMA1962-279-120a-big_SNM.jpg" alt="picture2" style="opacity:0;" />
+    </div>
+  </div>
+
+  <div id="div3" class="outer" style="transform: translateY(-200%);">
+    <div class="inner">
+      <img id="picture3" src="assets/images/tutinama_ch10_CMA1962-279-121a-big_SNM.jpg" alt="picture3" style="opacity:0;" />
+    </div>
+  </div>
+ 
+  <div id="div4" class="outer" style="transform: translateY(-300%);">
+    <div class="inner">
+      <img id="picture4" src="assets/images/tutinama_ch10_CMA1962-279-122b-big_SNM.jpg" alt="picture4" style="opacity:0;" />
+    </div>
+  </div>
+<!--
+  <div id="div5" class="outer" style="transform: translateY(-100%);">
+    <div class="inner">
+      <img id="picture5" src="assets/images/la1-1_big.jpg" alt="picture2" style="opacity:0;" />
+    </div>
+  </div>
+  <div id="div6" class="outer" style="transform: translateY(-100%);">
+    <div class="inner">
+      <img id="picture6" src="assets/images/la1-1_big.jpg" alt="picture2" style="opacity:0;" />
+    </div>
+  </div>   
+-->
+  <!-- overlay -->
+  <!-- SUBTITLES DIV -->
+  <section id="subtitleswindow">
+    <div>
+      <div>test1</div>
+      <div>asdf2</div>
+    </div>
+  </section>
+  <!-- buttons -->
+
+   <div id="morebuttons">
+<!-- 	<button id="replaybutton" class="button-style">
+        <i class="material-icons">replay</i>
+	</button> -->
+       
+      <!--<button id="btn2" class="bcss"><i class="material-icons">fast_forward</i></button>-->
+       
+      <button id="rewind5" class="button-style">
+        <i class="material-icons">replay_5</i>
+      </button>
+	  <button id="time" class="button-style2">00:00</button> 
+      <button id="forward5" class="button-style">
+        <i class="material-icons">forward_5</i>
+      </button> 
+
+  </div>
+<div id="mediabuttonsdiv">
+   <span id="closespan" class="closespan" style="opacity:1">
+	  <button id="closebutton" class="button-style-close" onclick="restart(); messageparent()">
+        <i id="closeb" class="material-icons">close</i>
+      </button>
+  </span>
+  
+  <div id="mediabuttons">
+   <!-- <span id="closespan" class="closespan"> -->
+	  <!-- <button id="closebutton" class="button-style-close" onclick="restart(); messageparent()"> -->
+        <!-- <i id="closeb" class="material-icons">close</i> -->
+      <!-- </button> -->
+  <!-- </span> -->
+  
+  <span id="hidemediaspan">
+	  <button id="hidemediabutton" class="button-style">
+        <i id="icon" class="material-icons hidemedia-right">expand_more</i>
+      </button>
+  </span>	  
+  <span id="mainbuttons">
+
+
+      <button id="playpause" class="button-style">
+        <i class="material-icons">play_circle_filled</i>
+      </button>
+	  <button id="replaybutton" class="button-style">
+        <i class="material-icons">replay</i>
+	</button>	
+      <button id="subtitlestoggle" class="button-style">
+        <i class="material-icons">closed_caption</i>
+      </button>
+	  
+    <button id="togglemorebuttons" class="button-style"><i class="material-icons">more_horiz</i></button>
+
+ 
+	  
+  </span>  
+  
+  </div> 
+</div>
+ 
+  <div id="startscreen" class="tint">
+  <!-- <div id="closespantp"> -->
+	  <!-- <button id="closebuttontp" onclick="messageparent()"> -->
+        <!-- <i id="closebtp" class="material-icons">close</i> -->
+      <!-- </button> -->
+  <!-- </div>  -->
+<div class="container">
+
+  <div class="block">
+
+      <button class="start" id="start-tp">START
+	    </button> 
+  
+    <div id="title">X. The Merchant's Daughter and the Jackal
+
+</div>
+    <div id="place-date">Tutinama</div>
+    <div id="timelength">(3:59 min.)</div>
+
+ 
+</div>
+
+<div class="block">
+    <a href="#openModal2" id="credits">CREDITS</a>
+    <div id="openModal2" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close"><i class="material-icons">close</i></a>
+		<p class="modaltitleprefix">CREDITS</p>
+<p class="modaltitle">Work(s) Featured</p>
+
+        <div class="detailsblurb2"> Unknown. <em>Page from Tales of a Parrot (Tuti-nama): Sixteenth night: The daughter-in-law of the king of Banaras, charmed by the music of a vagabond, comes down to meet him]</em>. India, c. 1560. Manuscript folio. Opaque watercolor, gold and ink on paper.Page: 20.3 x 14cm. Cleveland, c. 2010. CMA 1962.279.119.b. (Gift of Mrs. A. Dean Perry). 
+</div> 
+
+<div class="detailsblurb2"> Unknown. <em>Page from Tales of a Parrot (Tuti-nama): Sixteenth night: The vagabond crosses a stream with the possessions of the daughter-in-law of the king of Banaras and absconds]</em>. India, c. 1560. Manuscript folio. Opaque watercolor, gold and ink on paper.Page: 20.3 x 14cm. Cleveland, c. 2010. CMA 1962.279.120a (Gift of Mrs. A. Dean Perry)
+</div>
+
+ <div class="detailsblurb2"> Unknown. <em>Page from Tales of a Parrot (Tuti-nama): Sixteenth night: The daughter-in-law of the king of Banaras sees the jackal deprived of its food by a bird, as it unsuccessfully attempts to catch a fish]</em>.India, c. 1560. Manuscript folio. Opaque watercolor, gold and ink on paper.Page: 20.3 x 14cm. Cleveland, c. 2010. CMA 1962.279.121a (Gift of Mrs. A. Dean Perry). 
+</div>
+
+ <div class="detailsblurb2"> Unknown. <em>Page from Tales of a Parrot (Tuti-nama): Sixteenth night: The daughter-in-law returns from her misadventure, feigning insanity]</em>. India, c. 1560. Manuscript folio. Opaque watercolor, gold and ink on paper.Page: 20.3 x 14cm. Cleveland, c. 2010. CMA 1962.279.122.b (Gift of Mrs. A. Dean Perry). 
+</div>
+
+
+        <p class="modaltitle">Cite This Multimedia Work</p>
+        <div class="detailsblurb2">ARTH 375. “Multimedia: X. The Merchant's Daughter and the Jackal” <em>The Tutinama: A Digital Art History Student Project</em>, April 1, 2019. <span id="url3"></span>.
+        <p id="copyright">
+        <b>creative commons</b> - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) 
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Summary</a> 
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">Legal</a></p></div>
+        <p class="modaltitle">Multimedia Sources</p>
+		
+        <div class="detailsblurb2">
+IMAGES
+<ul>
+<li>Cleveland Museum Staff, <em>1962.279.119.b_print.jpg [Digital Image of Page from Tales of a Parrot (Tuti-nama):Sixteenth night: The daughter-in-law of the king of Banaras, charmed by the music of a vagabond, comes down to meet him] </em>. Cleveland, c. 2010. Digital Image. JPEG quality: 100, subsampling ON (2x2). 667 x 893 pixels. Cleveland Museum of Art website, http://www.clevelandart.org/art/1962.279.119.b
+</li>
+<li>Cleveland Museum Staff, <em>1962.279.120.a_print.jpg [Digital Image of Page from Tales of a Parrot (Tuti-nama):Sixteenth night: The vagabond crosses a stream with the possessions of the daughter-in-law of the king of Banaras and absconds]</em>. Cleveland, c. 2010. Digital Image. JPEG quality: 100, subsampling ON (2x2). 589 x 893 pixels. Cleveland Museum of Art website, http://www.clevelandart.org/art/1962.279.120.a
+</li>
+<li>Cleveland Museum Staff, <em>1962.279.121.a_print.jpg [Digital Image of Page from Tales of a Parrot (Tuti-nama):Sixteenth night: The daughter-in-law of the king of Banaras sees the jackal deprived of its food by a bird, as it unsuccessfully attempts to catch a fish]</em>. Cleveland, c. 2010. Digital Image. JPEG quality: 100, subsampling ON (2x2). 603 x 893 pixels. Cleveland Museum of Art website, http://www.clevelandart.org/art/1962.279.121.a
+</li>
+<li>Cleveland Museum Staff, <em>1962.279.122.b_print.jpg [Digital Image of Page from Tales of a Parrot (Tuti-nama):Sixteenth night: The daughter-in-law returns from her misadventure, feigning insanity]</em>. Digital Image. JPEG quality: 100, subsampling ON (2x2). 398 x 600 pixels. Cleveland Museum of Art website, http://www.clevelandart.org/art/1962.279.122.b
+</li>
+</ul>
+SOUND
+<ul>
+<li>Mose ft. Suyana - Live at Heart Culture, Downloaded at https://www.patreon.com/mosemusica, retrieved from https://www.youtube.com/watch?v=b5H3b_Hh0Lw&t=206s</li>
+</ul>
+TEXTS
+<ul>
+<li>Muḥammad Qādirī (17th C). “X. The Merchant's Daughter and the Jackal.” In <em>The Tooti Nameh, or Tales of a Parrot: In the Persian Language, with an English Translation</em>, translated by Francis Gladwin, 69-72 (esp. 70-71). Calcutta; London, 1801. https://archive.org/details/tutinamahtootina00lond/page/n123.</li>
+<li>Goswamy, B. N. and A. L. Dallapiccola. "A "Tuti Nama" from Gujarat. A Dated and Illustrated Manuscript in the Von Portheim-Stiftung, Heidelberg." Artibus Asiae 38, no. 4 (1976): 287-296. https://www-jstor-org.ezproxy.library.ubc.ca/stable/3250143?pq-	origsite=summon&seq=4#metadata_info_tab_contents</li>
+<li>Meister, Michael W. SIMSAR (Ed. and Transl.): "the Cleveland Museum of Art's Tuti-	Nama/Tales of a Parrot. by Ziya' Ud-Din Nakshabi" (Book Review). Vol. 101. New 	Haven, etc: American Oriental Society, 1981. https://www-jstor-org.ezproxy.library.ubc.ca/stable/601785?seq=1#metadata_info_tab_contents</li>
+<li>Beach, Milo Cleveland. The Tuti-Nama of the Cleveland Museum of Art and the Origins of 	Mughal Painting. Vol. 40 Artibus Asiae, 1978. https://www-jstor-org.ezproxy.library.ubc.ca/stable/3249816?pq-origsite=summon&seq=1#metadata_info_tab_contents</li>
+</ul>
+		</div>
+      </div>
+    </div>
+
+
+	
+    <a href="#openModal5" >
+
+      <i class="material-icons" id="share">share</i>
+    </a>
+    <div id="openModal5" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close"><i class="material-icons">close</i></a>
+
+        <p class="modaltitleprefix">SHARE</p>
+        <div id="sm" class="detailsblurb2">
+          <span>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
+            <img id="fb" src="assets/images/FB-f-Logo__white_100.png" />
+          </a> 
+          <a href="mailto:?Subject=The%20Aga%20Khan%20Garden" target="_top">
+            <img id="gm" src="assets/images/ic_mail_outline_white_48dp_2x.png" alt="gm"/>
+          </a> 
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false"
+          target="_blank">
+            <img id="tw" src="assets/images/Twitter_Logo_WhiteOnImage.png" alt="tw"/>
+          </a>
+          <br />
+          <br />Copy and share the following link on your favourite social media platform.
+          <br /></span>
+          <p id="url"></p>
+          <p>
+            <span>You can also use the menu in your browser to share.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+	
+</div>
+
+</div>
+
+</div>
+ 
+  <!-- buttons NOTE USE FULL LINK TO RELOAD LA1 AND RESUME GELOCATION FUNCTIONS-->
+<!--  <button id="backbutton" class="button-style" onclick="myFunction()">
+    <i class="material-icons">close</i>
+  </button>  -->
+
+
+
+  <audio id="audio1">
+  <source src="assets/audio/tutinama_ch10_SNM.mp3" type="audio/mp3" />
+    <track label="English subtitles" kind="subtitles" srclang="en" src="assets/audio/tutinama_ch10_SNM.vtt" default="" />Your browser does not
+  support the video tag</audio> 
+  <!--
+<script src="js/greensock-js/src/minified/TweenMax.min.js">
+</script>
+-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script> 
+  <script src="js/multimedia.js"></script> 
+  <script>
+var pic1 = document.getElementById("picture1");
+var pic2 = document.getElementById("picture2");
+var pic3 = document.getElementById("picture3");
+var pic4 = document.getElementById("picture4");
+<!-- var pic5 = document.getElementById("picture5"); -->
+<!-- var pic6 = document.getElementById("picture6"); -->
+
+var tl = new TimelineMax({paused:true,onUpdate:updatetime,onComplete:restart});
+
+tl.timeScale(1);
+
+
+//SET POSITION - 0S
+
+tl.to("#startscreen, #subtitleswindow", 0.5, {opacity: 0}, "+=0.5")
+.set ("#mediabuttons", {zIndex: 99})
+.to("#mediabuttons", 0.5, {opacity: 1})
+.call(enableNoSleep)
+
+.set ("#startscreen", {zIndex: -1})
+
+//1-ZOOM to bottom 
+  .to(pic1, 36.33, {
+  scale: 2.00,
+  xPercent: 0,
+  yPercent: 0,
+  ease: Power1.easeInOut
+})
+//2-ADD PAUSE 
+  .set({}, {}, "+=30.00")
+
+//3-CROSSFADE (to sec. pic)
+  .set(pic2, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+  opacity:0,
+})
+  .to(pic1, 1, {
+  scale: 2,
+  xPercent: 0,
+  yPercent: 0,
+  rotation: 0,
+  opacity:0,
+  ease: Sine.easeInOut
+})
+  .to(pic2, 1, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+  opacity:1,
+  ease: Sine.easeInOut
+},'-=1')
+
+//2-ZOOM to bottom 
+  .to(pic2, 16.00, {
+  scale: 2.5,
+  xPercent: 50,
+  yPercent: 0,
+  ease: Power1.easeInOut
+})
+
+//2-ZOOM out
+  .to(pic2, 8, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+  ease: Power1.easeInOut
+})
+
+//2-ZOOM in and pan right
+  .to(pic2, 10, {
+  scale: 2.5,
+  xPercent: -50,
+  yPercent: -70,
+  ease: Power1.easeInOut
+})
+
+//3-CROSSFADE (TO PIC3)
+  .set(pic3, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+  opacity:0,
+})
+
+  .to(pic2, 1, {
+  scale: 2.5,
+  xPercent: -50,
+  yPercent: -70,
+  rotation: 0,
+  opacity:0,
+  ease: Sine.easeInOut
+})
+
+  .to(pic3, 1, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+  opacity:1,
+  ease: Sine.easeInOut
+},'-=1')
+
+//2-ADD PAUSE 
+  .set({}, {}, "+=32.00")
+
+//2-ZOOM into fox
+  .to(pic3, 26, {
+  scale: 3,
+  xPercent: 0,
+  yPercent: -80,
+  ease: Power1.easeInOut
+})
+
+//2-ZOOM into MERCHANTS DAUGHTER
+  .to(pic3, 5, {
+  scale: 2.7,
+  xPercent: 50,
+  yPercent: -80,
+  ease: Power1.easeInOut
+})
+
+//2-ADD PAUSE 
+  .set({}, {}, "+=20.00")
+  
+//4-CROSSFADE (TO PIC4)
+  .set(pic4, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+  opacity:0,
+})
+
+  .to(pic3, 1, {
+  scale: 2.7,
+  xPercent: 50,
+  yPercent: -80,
+  rotation: 0,
+  opacity:0,
+  ease: Sine.easeInOut
+})
+
+  .to(pic4, 1, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+  opacity:1,
+  ease: Sine.easeInOut
+},'-=1')
+
+//2-ZOOM into Husband
+  .to(pic4, 15, {
+  scale: 2,
+  xPercent: 50,
+  yPercent: -60,
+  ease: Power1.easeInOut
+})
+
+//2-ZOOM into women
+  .to(pic4, 9, {
+  scale: 2,
+  xPercent: 0,
+  yPercent: 30,
+  ease: Power1.easeInOut
+})
+
+//2-ZOOM out
+  .to(pic4, 12, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+  ease: Power1.easeInOut
+})
+
+//2-ZOOM into daugther
+  .to(pic4, 11, {
+  scale: 2.5,
+  xPercent: -50,
+  yPercent: -60,
+  ease: Power1.easeInOut
+})
+
+//2-ADD PAUSE 
+  .set({}, {}, "+=6.00")
+
+//end sequence
+        .set ("#startscreen", {zIndex: 0})
+        .to("#startscreen", 0.5, {opacity: 1})
+        .call(disableNoSleep)
+</script></body>
+</html>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <title>XII. The old Lion, and the Cat, who, having killed the Mice, was turned out of office</title>
+    <link rel="stylesheet" href="css/multimedia.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Work+Sans|PT+Sans+Narrow" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<!--makes invisible to search engines
+    <meta name="robots" content="noindex," />
+-->	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  </head>
+  <body>
+  <script src="js/NoSleep.min.js"></script>
+  <div id="div1" class="outer">
+    <div class="inner">
+      <img id="picture1" src="assets/images/tutinama_ch12_CMA1962-279-112a-big_IB.jpg" alt="picture1"/>
+    </div>
+  </div>
+  <!-- for multiple images-->
+
+  <div id="div2" class="outer" style="transform: translateY(-100%);">
+    <div class="inner">
+      <img id="picture2" src="assets/images/tutinama_ch12_CMA1962-279-113a-big_IB.jpg" alt="picture2" style="opacity:0;" />
+    </div>
+  </div>
+
+  <div id="div3" class="outer" style="transform: translateY(-200%);">
+    <div class="inner">
+      <img id="picture3" src="assets/images/tutinama_ch12_CMA1962-279-114a-big_IB.jpg" alt="picture3" style="opacity:0;" />
+    </div>
+  </div>
+ 
+  <div id="div4" class="outer" style="transform: translateY(-300%);">
+    <div class="inner">
+      <img id="picture4" src="assets/images/tutinama_ch12_CMA1962-279-115b-big_IB.jpg" alt="picture4" style="opacity:0;" />
+    </div>
+  </div>
+<!--
+  <div id="div5" class="outer" style="transform: translateY(-100%);">
+    <div class="inner">
+      <img id="picture5" src="assets/images/la1-1_big.jpg" alt="picture2" style="opacity:0;" />
+    </div>
+  </div>
+  <div id="div6" class="outer" style="transform: translateY(-100%);">
+    <div class="inner">
+      <img id="picture6" src="assets/images/la1-1_big.jpg" alt="picture2" style="opacity:0;" />
+    </div>
+  </div>   
+-->
+  <!-- overlay -->
+  <!-- SUBTITLES DIV -->
+  <section id="subtitleswindow">
+    <div>
+      <div>test1</div>
+      <div>asdf2</div>
+    </div>
+  </section>
+  <!-- buttons -->
+
+   <div id="morebuttons">
+<!-- 	<button id="replaybutton" class="button-style">
+        <i class="material-icons">replay</i>
+	</button> -->
+       
+      <!--<button id="btn2" class="bcss"><i class="material-icons">fast_forward</i></button>-->
+       
+      <button id="rewind5" class="button-style">
+        <i class="material-icons">replay_5</i>
+      </button>
+	  <button id="time" class="button-style2">00:00</button> 
+      <button id="forward5" class="button-style">
+        <i class="material-icons">forward_5</i>
+      </button> 
+
+  </div>
+<div id="mediabuttonsdiv">
+   <span id="closespan" class="closespan" style="opacity:1">
+	  <button id="closebutton" class="button-style-close" onclick="restart(); messageparent()">
+        <i id="closeb" class="material-icons">close</i>
+      </button>
+  </span>
+  
+  <div id="mediabuttons">
+   <!-- <span id="closespan" class="closespan"> -->
+	  <!-- <button id="closebutton" class="button-style-close" onclick="restart(); messageparent()"> -->
+        <!-- <i id="closeb" class="material-icons">close</i> -->
+      <!-- </button> -->
+  <!-- </span> -->
+  
+  <span id="hidemediaspan">
+	  <button id="hidemediabutton" class="button-style">
+        <i id="icon" class="material-icons hidemedia-right">expand_more</i>
+      </button>
+  </span>	  
+  <span id="mainbuttons">
+
+
+      <button id="playpause" class="button-style">
+        <i class="material-icons">play_circle_filled</i>
+      </button>
+	  <button id="replaybutton" class="button-style">
+        <i class="material-icons">replay</i>
+	</button>	
+      <button id="subtitlestoggle" class="button-style">
+        <i class="material-icons">closed_caption</i>
+      </button>
+	  
+    <button id="togglemorebuttons" class="button-style"><i class="material-icons">more_horiz</i></button>
+
+ 
+	  
+  </span>  
+  
+  </div> 
+</div>
+ 
+  <div id="startscreen" class="tint">
+  <!-- <div id="closespantp"> -->
+	  <!-- <button id="closebuttontp" onclick="messageparent()"> -->
+        <!-- <i id="closebtp" class="material-icons">close</i> -->
+      <!-- </button> -->
+  <!-- </div>  -->
+<div class="container">
+
+  <div class="block">
+
+      <button class="start" id="start-tp">START
+	    </button> 
+  
+    <div id="title">XII. The old Lion, and the Cat, who, having killed the Mice, was turned out of office</div>
+    <div id="place-date">Tutinama</div>
+    <div id="timelength">(3:53 min.)</div>
+
+ 
+</div>
+
+<div class="block">
+    <a href="#openModal2" id="credits">CREDITS</a>
+    <div id="openModal2" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close"><i class="material-icons">close</i></a>
+		<p class="modaltitleprefix">CREDITS</p>
+		<p class="modaltitle">Work(s) Featured</p>
+        <div class="detailsblurb2">Unknown. <em>Page from Tales of a Parrot (Tuti-nama): Fifteenth night: The parrot addresses Khujasta at the beginning of the fifteenth night</em>. India, c. 1560. Manuscript folio. Opaque watercolor, gold and ink on paper. Page: 19.9 x 14.2 cm (7 13/16 x 5 9/16 in.); Painting: 12.9 x 10.5 cm (5 1/16 x 4 1/8 in.). Cleveland, Cleveland Museum of Art, CMA 1962.279.112.a. (Gift of Mrs. A. Dean Perry).</div>
+		<div class="detailsblurb2">Unknown. <em>Page from Tales of a Parrot (Tuti-nama): Fifteenth night: The lion disturbed by mice who eat the food trapped in his aging teeth</em>. India, c. 1560. Manuscript folio. Opaque watercolor, gold and ink on paper. Page: 19.9 x 14.2 cm (7 13/16 x 5 9/16 in.); Painting: 12.9 x 10.5 cm (5 1/16 x 4 1/8 in.). Cleveland, Cleveland Museum of Art, CMA 1962.279.113.a. (Gift of Mrs. A. Dean Perry).</div>
+		<div class="detailsblurb2">Unknown. <em>Page from Tales of a Parrot (Tuti-nama): Fifteenth night: The wolf advises the lion to consult the cat</em>. India, c. 1560. Manuscript folio. Opaque watercolor, gold and ink on paper. Page: 19.9 x 14.2 cm (7 13/16 x 5 9/16 in.); Painting: 12.9 x 10.5 cm (5 1/16 x 4 1/8 in.). Cleveland, Cleveland Museum of Art, CMA 1962.279.114.a. (Gift of Mrs. A. Dean Perry).</div>
+		<div class="detailsblurb2">Unknown. <em>Page from Tales of a Parrot (Tuti-nama): Fifteenth night: The cat attacks the mice which disturb the lion</em>. India, c. 1560. Manuscript folio. Opaque watercolor, gold and ink on paper. Page: 19.9 x 14.2 cm (7 13/16 x 5 9/16 in.); Painting: 12.9 x 10.5 cm (5 1/16 x 4 1/8 in.). Cleveland, Cleveland Museum of Art, CMA 1962.279.115.b. (Gift of Mrs. A. Dean Perry).</div>
+        <p class="modaltitle">Cite This Multimedia Work</p>
+        <div class="detailsblurb2">Bennett, Isabelle (Researcher, Scriptwriter, Voiceover, Storyboarder, Audio Editor, Image Editor,
+        Animator, Coder). “Multimedia: XII. The old Lion, and the Cat, who, having killed the Mice, was turned out of office.” 
+        <em>The Tutinama: A Digital Art History Student Project</em>, April 1st, 2019. <span id="url3"></span>.
+        <p id="copyright">
+        <b>creative commons</b> - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) 
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Summary</a> 
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">Legal</a></p></div>
+        <p class="modaltitle">Multimedia Sources</p>
+        <div class="detailsblurb2">IMAGES<ul>
+
+<li>Cleveland Museum Staff, <em>1962.279.112.a_print.jpg [Digital Image of Page from Tales of a Parrot (Tuti-nama): Fifteenth night: The parrot addresses Khujasta at the beginning of the fifteenth night]</em>. Cleveland, c. 2010. Digital Image. JPEG quality: 100, subsampling ON (2x2). 2122 x 3400 Pixels, 3 MB, 16.7 Million Colours (24 BitsPerPixel). Cleveland Museum of Art website, http://www.clevelandart.org/art/1962.279.112.a.</li>
+		
+<li>Cleveland Museum Staff, <em>1962.279.113.a_print.jpg [Digital Image of Page from Tales of a Parrot (Tuti-nama): Fifteenth night: The lion disturbed by mice who eat the food trapped in his aging teeth]</em>. Cleveland, c. 2010. Digital Image. JPEG quality: 100, subsampling ON (2x2). 2122 x 3400 Pixels, 3 MB, 16.7 Million Colours (24 BitsPerPixel). Cleveland Museum of Art website, http://www.clevelandart.org/art/1962.279.113.a.</li>
+
+<li>Cleveland Museum Staff, <em>1962.279.114.a_print.jpg [Digital Image of Page from Tales of a Parrot (Tuti-nama): Fifteenth night: The wolf advises the lion to consult the cat]</em>. Cleveland, c. 2010. Digital Image. JPEG quality: 100, subsampling ON (2x2). 2122 x 3400 Pixels, 3 MB, 16.7 Million Colours (24 BitsPerPixel). Cleveland Museum of Art website, http://www.clevelandart.org/art/1962.279.114.a.</li>
+
+<li>Cleveland Museum Staff, <em>1962.279.115.b_print.jpg [Digital Image of Page from Tales of a Parrot (Tuti-nama): Fifteenth night: The cat attacks the mice which disturb the lion]</em>. Cleveland, c. 2010. Digital Image. JPEG quality: 100, subsampling ON (2x2). 2122 x 3400 Pixels, 3 MB, 16.7 Million Colours (24 BitsPerPixel). Cleveland Museum of Art website, http://www.clevelandart.org/art/1962.279.115.b.</li>
+
+</ul>
+SOUND
+<ul>
+<li>Ami Dang. <em>Treasure</em>. Mp3. Vol. Live at WFMU on Talk's Cheap with Jason Sigal on August, 18, 2011. New Jersey: WFMU, 2011. freemusicarchive.org. http://freemusicarchive.org/music/Ami_Dang/Live_at_WFMU_on_Talks_Cheap_with_Jason_Sigal_on_August_18_2011/Ami_Dang_-_02_-_Treasure . </li>
+<li>Bruce Miller. <em>song 2</em>. Mp3. Vol. Field Recordings. New Jersey: WFMU, 2008. freemusicarchive.org. http://freemusicarchive.org/music/Broos/Field_Recordings_from_India/14_-_song_2 . 
+</ul>
+TEXTS
+<ul>
+<li>Muḥammad Qādirī (17th C). “XII. The old Lion, and the Cat, who, having killed the Mice, was turned out of office.” In <em>The Tooti Nameh, or Tales of a Parrot: In the Persian Language, with an English Translation</em>, translated by Francis Gladwin, 76-79. Calcutta; London, 1801. https://archive.org/details/tutinamahtootina00lond/page/n151.</li>
+</ul>
+		</div>
+      </div>
+    </div>
+
+
+	
+    <a href="#openModal5" >
+
+      <i class="material-icons" id="share">share</i>
+    </a>
+    <div id="openModal5" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close"><i class="material-icons">close</i></a>
+
+        <p class="modaltitleprefix">SHARE</p>
+        <div id="sm" class="detailsblurb2">
+          <span>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
+            <img id="fb" src="assets/images/FB-f-Logo__white_100.png" />
+          </a> 
+          <a href="mailto:?Subject=The%20Aga%20Khan%20Garden" target="_top">
+            <img id="gm" src="assets/images/ic_mail_outline_white_48dp_2x.png" alt="gm"/>
+          </a> 
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false"
+          target="_blank">
+            <img id="tw" src="assets/images/Twitter_Logo_WhiteOnImage.png" alt="tw"/>
+          </a>
+          <br />
+          <br />Copy and share the following link on your favourite social media platform.
+          <br /></span>
+          <p id="url"></p>
+          <p>
+            <span>You can also use the menu in your browser to share.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+	
+</div>
+
+</div>
+
+</div>
+ 
+  <!-- buttons NOTE USE FULL LINK TO RELOAD LA1 AND RESUME GELOCATION FUNCTIONS-->
+<!--  <button id="backbutton" class="button-style" onclick="myFunction()">
+    <i class="material-icons">close</i>
+  </button>  -->
+
+
+
+  <audio id="audio1">
+  <source src="assets/audio/Tutinama_ch12_IB.mp3" type="audio/mp3" />
+  <track label="English subtitles" kind="subtitles" srclang="en" src="assets/audio/Tutinama_ch12_IB.vtt" default="" />Your browser does not
+  support the video tag</audio> 
+  <!--
+<script src="js/greensock-js/src/minified/TweenMax.min.js">
+</script>
+-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script> 
+  <script src="js/multimedia.js"></script> 
+  <script>
+var pic1 = document.getElementById("picture1");
+var pic2 = document.getElementById("picture2");
+var pic3 = document.getElementById("picture3");
+var pic4 = document.getElementById("picture4");
+<!-- var pic5 = document.getElementById("picture5"); -->
+<!-- var pic6 = document.getElementById("picture6"); -->
+
+var tl = new TimelineMax({paused:true,onUpdate:updatetime,onComplete:restart});
+
+tl.timeScale(1);
+
+
+//SET POSITION - 0S
+
+tl.to("#startscreen, #subtitleswindow", 0.5, {opacity: 0}, "+=0.5")
+.set ("#mediabuttons", {zIndex: 99})
+.to("#mediabuttons", 0.5, {opacity: 1})
+.call(enableNoSleep)
+
+.set ("#startscreen", {zIndex: -1})
+
+
+//1-ZOOM IN
+  .to(pic1, 25, {
+  scale: 2.8,
+  xPercent: -30,
+  yPercent: -75,
+  ease: Power1.easeInOut
+})
+
+//2-PAN LEFT & ZOOM IN
+  .to(pic1, 15, {
+  scale: 4.0,
+  xPercent: 95,
+  yPercent: -60,
+  ease: Power1.easeInOut
+})
+
+//3-ZOOM OUT
+  .to(pic1, 20, {
+  scale: 2.0,
+  xPercent: 0,
+  yPercent: -45,
+  ease: Power1.easeInOut
+})
+
+//4-CROSSFADE (TO PIC2)
+  .set(pic2, {
+  scale: 6,
+  xPercent: -60,
+  yPercent: -190,
+  opacity:0,
+})
+  .to(pic1, 3, {
+  scale: 2.0,
+  xPercent: 2,
+  yPercent: -20,
+  rotation: 0,
+  opacity:0,
+  ease: Sine.easeInOut
+})
+  .to(pic2, 1, {
+  scale: 6,
+  xPercent: -60,
+  yPercent: -190,
+  opacity:1,
+  ease: Sine.easeInOut
+},'-=1') 
+
+//5-ADD PAUSE
+  .set({}, {}, "+=10")
+
+//6-ZOOM OUT
+  .to(pic2, 20, {
+  scale: 2.3,
+  xPercent: 0,
+  yPercent: -60,
+  ease: Power1.easeInOut
+})
+
+//7-CROSSFADE (TO PIC3)
+  .set(pic3, {
+  scale: 1.7,
+  xPercent: 0,
+  yPercent: -50,
+  opacity:0,
+})
+  .to(pic2, 1, {
+  scale: 1.85,
+  xPercent: 2,
+  yPercent: -20,
+  rotation: 0,
+  opacity:0,
+  ease: Sine.easeInOut
+})
+  .to(pic3, 1.7, {
+  scale: 2.3,
+  xPercent: 0,
+  yPercent: -60,
+  opacity:1,
+  ease: Sine.easeInOut
+},'-=1') 
+
+//8-ADD PAUSE
+  .set({}, {}, "+=10")
+
+//9-ZOOM IN
+  .to(pic3, 9, {
+  scale: 5,
+  xPercent: -40,
+  yPercent: -140,
+  ease: Power1.easeInOut
+})
+
+//10-PAN LEFT
+  .to(pic3, 20, {
+  scale: 6,
+  xPercent: 180,
+  yPercent: -230,
+  ease: Power1.easeInOut
+})
+
+//11-ADD PAUSE
+  .set({}, {}, "+=13")
+
+//12-CROSSFADE (TO PIC4)
+  .set(pic4, {
+  scale: 6,
+  xPercent: -60,
+  yPercent: -190,
+  opacity:0,
+})
+  .to(pic3, 1, {
+  scale: 1.85,
+  xPercent: 2,
+  yPercent: -20,
+  rotation: 0,
+  opacity:0,
+  ease: Sine.easeInOut
+})
+  .to(pic4, 1, {
+  scale: 6,
+  xPercent: -60,
+  yPercent: -190,
+  opacity:1,
+  ease: Sine.easeInOut
+},'-=1') 
+
+//13-ADD PAUSE
+  .set({}, {}, "+=7")
+
+//14-ZOOM OUT
+  .to(pic4, 17, {
+  scale: 1.7,
+  xPercent: 0,
+  yPercent: -35,
+  ease: Power1.easeInOut
+})
+
+//15-ADD PAUSE
+  .set({}, {}, "+=7")
+
+//15-CROSSFADE (TO PIC1)
+  .set(pic1, {
+  scale: 4.0,
+  xPercent: 90,
+  yPercent: -60,
+  opacity:0,
+})
+  .to(pic4, 15, {
+  scale: 1.7,
+  xPercent: 0,
+  yPercent: -35,
+  rotation: 0,
+  opacity:0,
+  ease: Sine.easeInOut
+})
+  .to(pic1, 5, {
+  scale: 4.0,
+  xPercent: 90,
+  yPercent: -60,
+  opacity:1,
+  ease: Sine.easeInOut
+},'-=1') 
+
+//16-ADD PAUSE
+  .set({}, {}, "+=15")
+
+//17-PAN RIGHT
+  .to(pic1, 15, {
+  scale: 3.2,
+  xPercent: -45,
+  yPercent: -82,
+  ease: Power1.easeInOut
+})
+
+//18-ADD PAUSE
+  .set({}, {}, "+=7")
+
+//end sequence
+        .set ("#startscreen", {zIndex: 0})
+        .to("#startscreen", 0.5, {opacity: 1})
+        .call(disableNoSleep)
+		
+</script></body>
+</html>

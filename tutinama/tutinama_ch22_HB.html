@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <title>XXII. The Merchant whose Daughter was lost</title>
+    <link rel="stylesheet" href="css/multimedia.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Work+Sans|PT+Sans+Narrow" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<!--makes invisible to search engines
+    <meta name="robots" content="noindex," />
+-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  </head>
+  <body>
+  <script src="js/NoSleep.min.js"></script>
+  <div id="div1" class="outer">
+    <div class="inner">
+      <img id="picture1" src="assets/images/tutinama_ch23_CMA1962-279-223b-big_HB.jpg" alt="picture1"/>
+    </div>
+  </div>
+  <!-- for multiple images-->
+
+  <div id="div2" class="outer" style="transform: translateY(-100%);">
+    <div class="inner">
+      <img id="picture2" src="assets/images/tutinama_ch23_CMA1962-279-225a-big_HB.jpg" alt="picture2" style="opacity:0;" />
+    </div>
+  </div>
+
+  <div id="div3" class="outer" style="transform: translateY(-200%);">
+    <div class="inner">
+      <img id="picture3" src="assets/images/tutinama_ch23_CMA1962-279-226a-big_HB.jpg" alt="picture3" style="opacity:0;" />
+    </div>
+  </div>
+<!--
+  <div id="div4" class="outer" style="transform: translateY(-100%);">
+    <div class="inner">
+      <img id="picture4" src="assets/images/la1-1_big.jpg" alt="picture2" style="opacity:0;" />
+    </div>
+  </div>
+
+  <div id="div5" class="outer" style="transform: translateY(-100%);">
+    <div class="inner">
+      <img id="picture5" src="assets/images/la1-1_big.jpg" alt="picture2" style="opacity:0;" />
+    </div>
+  </div>
+  <div id="div6" class="outer" style="transform: translateY(-100%);">
+    <div class="inner">
+      <img id="picture6" src="assets/images/la1-1_big.jpg" alt="picture2" style="opacity:0;" />
+    </div>
+  </div>
+-->
+  <!-- overlay -->
+  <!-- SUBTITLES DIV -->
+  <section id="subtitleswindow">
+    <div>
+      <div>test1</div>
+      <div>asdf2</div>
+    </div>
+  </section>
+  <!-- buttons -->
+
+   <div id="morebuttons">
+<!-- 	<button id="replaybutton" class="button-style">
+        <i class="material-icons">replay</i>
+	</button> -->
+
+      <!--<button id="btn2" class="bcss"><i class="material-icons">fast_forward</i></button>-->
+
+      <button id="rewind5" class="button-style">
+        <i class="material-icons">replay_5</i>
+      </button>
+	  <button id="time" class="button-style2">00:00</button>
+      <button id="forward5" class="button-style">
+        <i class="material-icons">forward_5</i>
+      </button>
+
+  </div>
+<div id="mediabuttonsdiv">
+   <span id="closespan" class="closespan" style="opacity:1">
+	  <button id="closebutton" class="button-style-close" onclick="restart(); messageparent()">
+        <i id="closeb" class="material-icons">close</i>
+      </button>
+  </span>
+
+  <div id="mediabuttons">
+   <!-- <span id="closespan" class="closespan"> -->
+	  <!-- <button id="closebutton" class="button-style-close" onclick="restart(); messageparent()"> -->
+        <!-- <i id="closeb" class="material-icons">close</i> -->
+      <!-- </button> -->
+  <!-- </span> -->
+
+  <span id="hidemediaspan">
+	  <button id="hidemediabutton" class="button-style">
+        <i id="icon" class="material-icons hidemedia-right">expand_more</i>
+      </button>
+  </span>
+  <span id="mainbuttons">
+
+
+      <button id="playpause" class="button-style">
+        <i class="material-icons">play_circle_filled</i>
+      </button>
+	  <button id="replaybutton" class="button-style">
+        <i class="material-icons">replay</i>
+	</button>
+      <button id="subtitlestoggle" class="button-style">
+        <i class="material-icons">closed_caption</i>
+      </button>
+
+    <button id="togglemorebuttons" class="button-style"><i class="material-icons">more_horiz</i></button>
+
+
+
+  </span>
+
+  </div>
+</div>
+
+  <div id="startscreen" class="tint">
+  <!-- <div id="closespantp"> -->
+	  <!-- <button id="closebuttontp" onclick="messageparent()"> -->
+        <!-- <i id="closebtp" class="material-icons">close</i> -->
+      <!-- </button> -->
+  <!-- </div>  -->
+<div class="container">
+
+  <div class="block">
+
+      <button class="start" id="start-tp">START
+	    </button>
+
+    <div id="title">XXII. The Merchant whose Daughter was Lost</div>
+    <div id="place-date">Tutinama</div>
+    <div id="timelength">(3:51 min.)</div>
+
+
+</div>
+
+<div class="block">
+    <a href="#openModal2" id="credits">CREDITS</a>
+    <div id="openModal2" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close"><i class="material-icons">close</i></a>
+		<p class="modaltitleprefix">CREDITS</p>
+		<p class="modaltitle">Work(s) Featured</p>
+    <div class="detailsblurb2">Unknown. <em>Page from Tales of a Parrot (Tuti-nama): Thirty-fourth night: The parrot addresses Khujasta at the beginning of the thirty-fourth night.</em> India, c.1560. Manuscript folio. Opaque watercolor, gold and ink on paper.Page: 19.9 x 14.2 cm (7 13/16 x 5 9/16in.); Cleveland, Cleveland Museum of Art, CMA 1962.279.223.b.(Gift of Mrs. A. Dean Perry)</div>
+        <div class="detailsblurb2">Unknown. <em>Page from Tales of a Parrot (Tuti-nama): Thirty-fourth night: The three young men present themselves as suitors for the hand of Zuhra, the daughter of the merchant of Kabul.</em> India, c.1560. Manuscript folio. Opaque watercolor, gold and ink on paper.Page: 19.9 x 14.2 cm (7 13/16 x 5 9/16in.); Cleveland, Cleveland Museum of Art, CMA 1962.279.225.a.(Gift of Mrs. A. Dean Perry)</div>
+        <div class="detailsblurb2">Unknown. <em>Page from Tales of a Parrot (Tuti-nama): Thirty-fourth night: The third suitor, who is an archer, shoots the wicked fairy who has imprisoned Zuhra. He rides on a magic horse prepared by the second suitor and is led to the spot by the divining prowess of the first.</em> India, c.1560. Manuscript folio. Opaque watercolor, gold and ink on paper.Page: 19.9 x 14.2 cm (7 13/16 x 5 9/16in.); Cleveland, Cleveland Museum of Art, CMA 1962.279.226.a.(Gift of Mrs. A. Dean Perry)</div>
+        <p class="modaltitle">Cite This Multimedia Work</p>
+        <div class="detailsblurb2">Bhamra, Harsha (Researcher, Scriptwriter, Voiceover, Storyboarder, Audio Editor, Image Editor,
+        Animator, Coder). “Multimedia: XXII. The Merchant whose Daughter was Lost.”
+        <em>The Tutinama: A Digital Art History Student Project</em> April 1, 2019 <span id="url3"></span>.
+        <p id="copyright">
+        <b>creative commons</b> - Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Summary</a>
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">Legal</a></p></div>
+        <p class="modaltitle">Multimedia Sources</p>
+        <div class="detailsblurb2">IMAGES<ul>
+		<li>Cleveland Museum Staff, <em>1962.279.223.b_print.jpg [Digital Image of Page from Tales of a Parrot (Tuti-nama): Thirty-fourth night: The parrot addresses Khujasta at the beginning of the thirty-fourth night]</em>. Cleveland, c. 2010. Digital Image. JPEG quality: 100, subsampling ON (2x2). 2264 × 3400 Pixels, 1.8 MB, 16.7 Million Colours (24 BitsPerPixel). Cleveland Museum of Art website, https://clevelandart.org/art/1962.279.223.b.</li>
+    <li>Cleveland Museum Staff, <em>1962.279.225.a_print.jpg [Digital Image of Page from Tales of a Parrot (Tuti-nama): Thirty-fourth night: The three young men present themselves as suitors for the hand of Zuhra, the daughter of the merchant of Kabul]</em>. Cleveland, c. 2010. Digital Image. JPEG quality: 100, subsampling ON (2x2). 2237 × 3400 Pixels, 2.0 MB, 16.7 Million Colours (24 BitsPerPixel). Cleveland Museum of Art website, https://clevelandart.org/art/1962.279.225.a.</li>
+    <li>Cleveland Museum Staff, <em>1962.279.226.b_print.jpg [Digital Image of Page from Tales of a Parrot (Tuti-nama): Thirty-fourth night: The third suitor, who is an archer, shoots the wicked fairy who has imprisoned Zuhra. He rides on a magic horse prepared by the second suitor and is led to the spot by the divining prowess of the first]</em>. Cleveland, c. 2010. Digital Image. JPEG quality: 100, subsampling ON (2x2). 2220 × 3400 Pixels, 7.3 MB, 16.7 Million Colours (24 BitsPerPixel). Cleveland Museum of Art website, https://clevelandart.org/art/1962.279.226.a.</li>
+
+</ul>
+SOUND
+<ul>
+<li>Kinhal, Veena. Haratanaya Sree. Spain: WFMU, 2009. freemusicarchive.org. http://freemusicarchive.org/music/Veena_Kinhal/Tribute_to_Veena_Raja_Rao/Haratanaya_Sree</li>
+</ul>
+TEXTS
+<ul>
+<li>Muḥammad Qādirī (17th C). “XXII: The Merchant Whose Daughter Was Lost.” In <em>The Tooti Nameh, or Tales of a Parrot: In the Persian Language, with an English Translation</em>, translated by Francis Gladwin, 113-116 (esp 115). Calcutta; London, 1801. https://archive.org/details/tutinamahtootina00lond/page/n209.
+</li>
+<li>Asher, Catherine B., and Cynthia Talbot. “Sixteenth-Century North India: Empire Reformulated.” In India before Europe (New York: Cambridge University Press, 2006), PDF e-book, 115–57(esp. 136). doi: https://doi.org/10.1017/CBO9780511808586.008"</li>
+<li>Chandra, Pramod.“The Tuti-nama and the Origin of Early Mughal Painting.” In The Tuti-Nama of the Cleveland Museum of Art and the Origins of Mughal Painting (Chicago: University of Chicago, 1976), 161–166.</li>
+<li>Seyller, John.“Overpainting in the Cleveland T̤ūt̤īnāma.” Artibus Asiae 52 (1992): 283–318. https://doi.org/10.2307/3249892.</li>
+</ul>
+		</div>
+      </div>
+    </div>
+
+
+
+    <a href="#openModal5" >
+
+      <i class="material-icons" id="share">share</i>
+    </a>
+    <div id="openModal5" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close"><i class="material-icons">close</i></a>
+
+        <p class="modaltitleprefix">SHARE</p>
+        <div id="sm" class="detailsblurb2">
+          <span>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
+            <img id="fb" src="assets/images/FB-f-Logo__white_100.png" />
+          </a>
+          <a href="mailto:?Subject=The%20Aga%20Khan%20Garden" target="_top">
+            <img id="gm" src="assets/images/ic_mail_outline_white_48dp_2x.png" alt="gm"/>
+          </a>
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false"
+          target="_blank">
+            <img id="tw" src="assets/images/Twitter_Logo_WhiteOnImage.png" alt="tw"/>
+          </a>
+          <br />
+          <br />Copy and share the following link on your favourite social media platform.
+          <br /></span>
+          <p id="url"></p>
+          <p>
+            <span>You can also use the menu in your browser to share.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+  <!-- buttons NOTE USE FULL LINK TO RELOAD LA1 AND RESUME GELOCATION FUNCTIONS-->
+<!--  <button id="backbutton" class="button-style" onclick="myFunction()">
+    <i class="material-icons">close</i>
+  </button>  -->
+
+
+
+  <audio id="audio1">
+  <source src="assets/audio/tutinama_ch23_HB.mp3" type="audio/mp3" />
+  <track label="English subtitles" kind="subtitles" srclang="en" src="assets/audio/tutinama_ch23_HB.vtt" default="" />Your browser does not
+  support the video tag</audio>
+  <!--
+<script src="js/greensock-js/src/minified/TweenMax.min.js">
+</script>
+-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+  <script src="js/multimedia.js"></script>
+  <script>
+var pic1 = document.getElementById("picture1");
+var pic2 = document.getElementById("picture2");
+var pic3 = document.getElementById("picture3");
+<!-- var pic4 = document.getElementById("picture4"); -->
+<!-- var pic5 = document.getElementById("picture5"); -->
+<!-- var pic6 = document.getElementById("picture6"); -->
+
+var tl = new TimelineMax({paused:true,onUpdate:updatetime,onComplete:restart});
+
+tl.timeScale(1);
+
+
+//SET POSITION - 0S
+
+tl.to("#startscreen, #subtitleswindow", 0.5, {opacity: 0}, "+=0.5")
+.set ("#mediabuttons", {zIndex: 99})
+.to("#mediabuttons", 0.5, {opacity: 1})
+.call(enableNoSleep)
+
+.set ("#startscreen", {zIndex: -1})
+
+
+//1-ZOOM IN & PAN LEFT (john seyller observation)
+  .to(pic1, 31, {
+  scale: 1.99,
+  xPercent: 20,
+  yPercent: -35,
+  ease: Power1.easeInOut
+})
+
+//2-CROSSFADE (TO pic 1)
+  .set(pic2, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+  opacity:0,
+})
+  .to(pic1, 1, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+  rotation: 0,
+  opacity:0,
+  ease: Sine.easeInOut
+})
+  .to(pic2, 1, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+  opacity:1,
+  ease: Sine.easeInOut
+},'-=1')
+
+//3-PAN RIGHT (zooms into the 2 women at the top)
+  .to(pic2, 11.5, {
+  scale: 3.99,
+  xPercent: 94,
+  yPercent:120,
+  ease: Power1.easeInOut
+})
+
+//4-PAN RIGHT (zooms into the 3 young men and merchant)
+  .to(pic2, 6.5, {
+  scale: 3.99,
+  xPercent: 74,
+  yPercent:00,
+  ease: Power1.easeInOut
+})
+
+//5-PAN RIGHT (zooms into the young man 1)
+  .to(pic2, 3.5, {
+  scale: 8.00,
+  xPercent: 310,
+  yPercent:20,
+  ease: Power1.easeInOut
+})
+//9-ADD PAUSE on young man 1
+  .set({}, {}, "+=2.5")
+//6-PAN RIGHT (zooms into the young man 2)
+  .to(pic2, 4.00, {
+  scale: 8.99,
+  xPercent: 280,
+  yPercent:30,
+  ease: Power1.easeInOut
+})
+//9-ADD PAUSE on young man 2
+  .set({}, {}, "+=6.00")
+
+//7-PAN RIGHT (zooms into the young man 3 + his archery)
+  .to(pic2, 3.00, {
+  scale: 6.99,
+  xPercent: 140,
+  yPercent:20,
+  ease: Power1.easeInOut
+})
+//9-ADD PAUSE on young man 3
+  .set({}, {}, "+=3.00")
+
+//8-ZOOM OUT (zoom out on the three suitor + merchant)
+  .to(pic2, 10, {
+  scale: 3.99,
+  xPercent: 54,
+  yPercent: 00,
+  ease: Power1.easeInOut
+})
+//9-ADD PAUSE
+  .set({}, {}, "+=20.50")
+
+//13-PAN UP (zoom in two women)
+  .to(pic2, 7, {
+  scale: 4.99,
+  xPercent: 74,
+  yPercent: 150,
+  ease: Power1.easeInOut
+})
+//14-ZOOM in (women in right)
+  .to(pic2, 8, {
+  scale: 9.99,
+  xPercent: 54,
+  yPercent: 280,
+  ease: Power1.easeInOut
+})
+//15-ZOOM in (women in left)
+  .to(pic2, 11, {
+  scale: 9.50,
+  xPercent: 220,
+  yPercent: 280,
+  ease: Power1.easeInOut
+})
+//16-PAN to (zoom in two women)
+  .to(pic2, 3, {
+  scale: 5.99,
+  xPercent: 74,
+  yPercent: 170,
+  ease: Power1.easeInOut
+})
+//17-ADD PAUSE
+  .set({}, {}, "+=3.00")
+
+//18-ZOOM OUT (mood switch to center)
+  .to(pic2, 6, {
+  scale: 3.00,
+  xPercent: 34,
+  yPercent: 00,
+  ease: Power1.easeInOut
+})
+//19-ADD PAUSE
+  .set({}, {}, "+=3.00")
+
+//20-ZOOM OUT (man in the corner)
+  .to(pic2, 8, {
+  scale: 8.00,
+  xPercent: -300,
+  yPercent: -300,
+  ease: Power1.easeInOut
+})
+//21-ADD PAUSE
+  .set({}, {}, "+=9.00")
+
+//20-ZOOM UP (zoom to merchant)
+  .to(pic2, 6, {
+  scale: 8.00,
+  xPercent: -69,
+  yPercent: 30,
+  ease: Power1.easeInOut
+})
+//23-ADD PAUSE on merchant
+  .set({}, {}, "+=4.00")
+
+//24-PAN RIGHT (zooms into the young man 1 to find daughter)
+  .to(pic2, 4.00, {
+  scale: 7.99,
+  xPercent: 310,
+  yPercent:10,
+  ease: Power1.easeInOut
+})
+//23-ADD PAUSE on merchant
+  .set({}, {}, "+=4.50")
+
+//25-PAN RIGHT (zooms into the young man 2 to build horse)
+  .to(pic2, 8.00, {
+  scale: 8.99,
+  xPercent: 250,
+  yPercent:30,
+  ease: Power1.easeInOut
+})
+//23-ADD PAUSE on young man 1 and 2
+  .set({}, {}, "+=3.00")
+
+//26-PAN Left (notice characters' eyes)
+  .to(pic2, 10.00, {
+  scale: 5.00,
+  xPercent: 100,
+  yPercent: 00,
+  ease: Power1.easeInOut
+})
+
+//27-PAN RIGHT (zooms into the 3 young men and merchant)
+  .to(pic2, 5.50, {
+  scale: 3.99,
+  xPercent: 74,
+  yPercent:00,
+  ease: Power1.easeInOut
+})
+
+//11-CROSSFADE (TO pic 2 and docus on center)
+  .set(pic3, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+  opacity:0,
+})
+  .to(pic2, 1, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+  rotation: 0,
+  opacity:0,
+  ease: Sine.easeInOut
+})
+  .to(pic3, 1, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+  opacity:1,
+  ease: Sine.easeInOut
+},'-=1')
+
+//30-PAN RIGHT (zooms into the young man 3 + his archery)
+  .to(pic3, 12.00, {
+  scale: 3,
+  xPercent:-50,
+  yPercent:00,
+  ease: Power1.easeInOut
+})
+
+//34-ADD PAUSE (dilema)
+  .set({}, {}, "+=4")
+
+//11-CROSSFADE (TO pic 2 and docus on center)
+  .set(pic2, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+  opacity:0,
+})
+  .to(pic3, 1, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+  rotation: 0,
+  opacity:0,
+  ease: Sine.easeInOut
+})
+  .to(pic2, 1, {
+  scale: 1,
+  xPercent: 0,
+  yPercent: 0,
+  opacity:1,
+  ease: Sine.easeInOut
+},'-=1')
+
+//25-PAN RIGHT (zooms into the young man 3 the archer)
+  .to(pic2, 4.50, {
+  scale: 5.00,
+  xPercent: 110,
+  yPercent: 0,
+  ease: Power1.easeInOut
+})
+//34-ADD PAUSE (dilema)
+  .set({}, {}, "+=4")
+//end sequence
+        .set ("#startscreen", {zIndex: 0})
+        .to("#startscreen", 0.5, {opacity: 1})
+        .call(disableNoSleep)
+</script></body>
+</html>
